@@ -1,1 +1,50 @@
-
+{
+  "Aluminum 6061-T6": {
+    "material_name": "Aluminum 6061-T6",
+    "cost_per_kg_usd": 3.5,
+    "sustainability_score": 7,
+    "sustainability_notes": "Highly recyclable, but initial production is energy-intensive."
+  },
+  "ABS Plastic, General Purpose": {
+    "material_name": "ABS Plastic, General Purpose",
+    "cost_per_kg_usd": 2.8,
+    "sustainability_score": 4,
+    "sustainability_notes": "Petroleum-based and less commonly recycled than other plastics like PET."
+  },
+  "Titanium Ti-6Al-4V (Grade 5)": {
+    "material_name": "Titanium Ti-6Al-4V (Grade 5)",
+    "cost_per_kg_usd": 50.0,
+    "sustainability_score": 6,
+    "sustainability_notes": "Very durable and long-lasting, reducing replacement needs, but extraction and processing require significant energy."
+  },
+  "PEEK (Polyether Ether Ketone)": {
+    "material_name": "PEEK (Polyether Ether Ketone)",
+    "cost_per_kg_usd": 80.0,
+    "sustainability_score": 5,
+    "sustainability_notes": "High-performance thermoplastic, recyclable but energy-intensive to produce."
+  },
+  "Inconel 718": {
+    "material_name": "Inconel 718",
+    "cost_per_kg_usd": 45.0,
+    "sustainability_score": 6,
+    "sustainability_notes": "Extremely durable and long-lasting, but nickel mining has significant environmental impact."
+  },
+  "G-10/FR-4 Glass Epoxy Composite": {
+    "material_name": "G-10/FR-4 Glass Epoxy Composite",
+    "cost_per_kg_usd": 15.0,
+    "sustainability_score": 3,
+    "sustainability_notes": "Thermoset composite, not recyclable and difficult to dispose of."
+  },
+  "Beryllium Copper (C17200)": {
+    "material_name": "Beryllium Copper (C17200)",
+    "cost_per_kg_usd": 60.0,
+    "sustainability_score": 4,
+    "sustainability_notes": "Beryllium mining and dust are hazardous; high recyclability value."
+  },
+  "Silicone Rubber, General Purpose": {
+    "material_name": "Silicone Rubber, General Purpose",
+    "cost_per_kg_usd": 8.0,
+    "sustainability_score": 6,
+    "sustainability_notes": "More durable and longer-lasting than many other rubbers, but not easily biodegradable or recycled."
+  }
+}
