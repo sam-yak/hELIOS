@@ -1,0 +1,427 @@
+{
+  "Aluminum 6061-T6": {
+    "Material Notes": "A general purpose, heat treatable aluminum alloy with good formability, weldability, and corrosion resistance.",
+    "Physical Properties": { "Density": "2.70 g/cc" },
+    "Mechanical Properties": {
+      "Tensile Strength, Ultimate": "310 MPa",
+      "Tensile Strength, Yield": "276 MPa",
+      "Modulus of Elasticity": "68.9 GPa"
+    },
+    "Thermal Properties": { "Thermal Conductivity": "167 W/m-K", "Melting Point": "582 - 652 °C" }
+  },
+  "Aluminum 7075-T6": {
+    "Material Notes": "High-strength aluminum alloy widely used in aerospace and military applications.",
+    "Physical Properties": { "Density": "2.81 g/cc" },
+    "Mechanical Properties": {
+      "Tensile Strength, Ultimate": "572 MPa",
+      "Tensile Strength, Yield": "503 MPa",
+      "Modulus of Elasticity": "71.7 GPa"
+    },
+    "Thermal Properties": { "Thermal Conductivity": "130 W/m-K", "Melting Point": "477 - 635 °C" }
+  },
+  "Aluminum 2024-T3": {
+    "Material Notes": "High-strength aluminum alloy used in aircraft structures.",
+    "Physical Properties": { "Density": "2.78 g/cc" },
+    "Mechanical Properties": {
+      "Tensile Strength, Ultimate": "483 MPa",
+      "Tensile Strength, Yield": "345 MPa",
+      "Modulus of Elasticity": "73.1 GPa"
+    },
+    "Thermal Properties": { "Thermal Conductivity": "121 W/m-K", "Melting Point": "500 - 638 °C" }
+  },
+  "Stainless Steel 304": {
+    "Material Notes": "The most widely used stainless steel, offering excellent corrosion resistance and formability.",
+    "Physical Properties": { "Density": "8.00 g/cc" },
+    "Mechanical Properties": {
+      "Tensile Strength, Ultimate": "505 MPa",
+      "Tensile Strength, Yield": "215 MPa",
+      "Modulus of Elasticity": "193 GPa"
+    },
+    "Thermal Properties": { "Thermal Conductivity": "16.2 W/m-K", "Melting Point": "1400 - 1450 °C" }
+  },
+  "Stainless Steel 316": {
+    "Material Notes": "Marine-grade stainless steel with superior corrosion resistance, especially against chlorides.",
+    "Physical Properties": { "Density": "8.00 g/cc" },
+    "Mechanical Properties": {
+      "Tensile Strength, Ultimate": "515 MPa",
+      "Tensile Strength, Yield": "205 MPa",
+      "Modulus of Elasticity": "193 GPa"
+    },
+    "Thermal Properties": { "Thermal Conductivity": "16.3 W/m-K", "Melting Point": "1375 - 1400 °C" }
+  },
+  "Stainless Steel 17-4 PH": {
+    "Material Notes": "Precipitation-hardening stainless steel offering high strength and good corrosion resistance.",
+    "Physical Properties": { "Density": "7.80 g/cc" },
+    "Mechanical Properties": {
+      "Tensile Strength, Ultimate": "1310 MPa",
+      "Tensile Strength, Yield": "1210 MPa",
+      "Modulus of Elasticity": "196 GPa"
+    },
+    "Thermal Properties": { "Thermal Conductivity": "17.8 W/m-K", "Melting Point": "1400 - 1440 °C" }
+  },
+  "Carbon Steel 1045": {
+    "Material Notes": "Medium carbon steel with good balance of strength, toughness, and wear resistance.",
+    "Physical Properties": { "Density": "7.85 g/cc" },
+    "Mechanical Properties": {
+      "Tensile Strength, Ultimate": "585 MPa",
+      "Tensile Strength, Yield": "310 MPa",
+      "Modulus of Elasticity": "200 GPa"
+    },
+    "Thermal Properties": { "Thermal Conductivity": "49.8 W/m-K", "Melting Point": "1470 °C" }
+  },
+  "Carbon Steel 4140": {
+    "Material Notes": "Chromium-molybdenum alloy steel with high fatigue strength and toughness.",
+    "Physical Properties": { "Density": "7.85 g/cc" },
+    "Mechanical Properties": {
+      "Tensile Strength, Ultimate": "655 MPa",
+      "Tensile Strength, Yield": "415 MPa",
+      "Modulus of Elasticity": "205 GPa"
+    },
+    "Thermal Properties": { "Thermal Conductivity": "42.6 W/m-K", "Melting Point": "1416 °C" }
+  },
+  "Tool Steel D2": {
+    "Material Notes": "High-carbon, high-chromium tool steel with excellent wear resistance.",
+    "Physical Properties": { "Density": "7.70 g/cc" },
+    "Mechanical Properties": {
+      "Tensile Strength, Ultimate": "2050 MPa",
+      "Tensile Strength, Yield": "1900 MPa",
+      "Hardness, Rockwell C": "54 - 61"
+    },
+    "Thermal Properties": { "Thermal Conductivity": "20 W/m-K", "Melting Point": "1421 °C" }
+  },
+  "ABS Plastic, General Purpose": {
+    "Material Notes": "A common thermoplastic polymer known for its impact resistance and toughness.",
+    "Physical Properties": { "Density": "1.06 g/cc" },
+    "Mechanical Properties": { "Tensile Strength, Ultimate": "45.0 MPa", "Modulus of Elasticity": "2.20 GPa" },
+    "Thermal Properties": { "Heat Deflection Temperature at 0.46 MPa (66 psi)": "98.0 °C" }
+  },
+  "Polycarbonate (PC)": {
+    "Material Notes": "Tough, transparent thermoplastic with excellent impact resistance.",
+    "Physical Properties": { "Density": "1.20 g/cc" },
+    "Mechanical Properties": {
+      "Tensile Strength, Ultimate": "62 MPa",
+      "Modulus of Elasticity": "2.38 GPa"
+    },
+    "Thermal Properties": { "Heat Deflection Temperature at 0.46 MPa": "132 °C" }
+  },
+  "Nylon 6/6 (PA66)": {
+    "Material Notes": "Engineering thermoplastic with good mechanical properties, wear resistance, and low friction.",
+    "Physical Properties": { "Density": "1.14 g/cc" },
+    "Mechanical Properties": {
+      "Tensile Strength, Ultimate": "82.7 MPa",
+      "Modulus of Elasticity": "2.90 GPa"
+    },
+    "Thermal Properties": { "Melting Point": "255 - 265 °C" }
+  },
+  "Delrin (Acetal/POM)": {
+    "Material Notes": "Engineering plastic known for high stiffness, low friction, and excellent dimensional stability.",
+    "Physical Properties": { "Density": "1.42 g/cc" },
+    "Mechanical Properties": {
+      "Tensile Strength, Ultimate": "68 MPa",
+      "Modulus of Elasticity": "3.10 GPa"
+    },
+    "Thermal Properties": { "Melting Point": "175 °C" }
+  },
+  "PTFE (Teflon)": {
+    "Material Notes": "Fluoropolymer with exceptional chemical resistance, low friction, and high temperature stability.",
+    "Physical Properties": { "Density": "2.20 g/cc" },
+    "Mechanical Properties": {
+      "Tensile Strength, Ultimate": "27.6 MPa",
+      "Modulus of Elasticity": "0.55 GPa"
+    },
+    "Thermal Properties": { "Maximum Service Temperature": "260 °C", "Melting Point": "327 °C" }
+  },
+  "Titanium Ti-6Al-4V (Grade 5)": {
+    "Material Notes": "The most common titanium alloy, known for its high strength-to-weight ratio and corrosion resistance.",
+    "Physical Properties": { "Density": "4.43 g/cc" },
+    "Mechanical Properties": {
+      "Tensile Strength, Ultimate": "950 MPa",
+      "Tensile Strength, Yield": "830 MPa",
+      "Modulus of Elasticity": "113.8 GPa"
+    },
+    "Thermal Properties": { "Maximum Service Temperature, Air": "427 °C" }
+  },
+  "Titanium Grade 2 (CP Ti)": {
+    "Material Notes": "Commercially pure titanium with excellent corrosion resistance and good formability.",
+    "Physical Properties": { "Density": "4.51 g/cc" },
+    "Mechanical Properties": {
+      "Tensile Strength, Ultimate": "345 MPa",
+      "Tensile Strength, Yield": "275 MPa",
+      "Modulus of Elasticity": "102.7 GPa"
+    },
+    "Thermal Properties": { "Thermal Conductivity": "16.4 W/m-K", "Melting Point": "1670 °C" }
+  },
+  "PEEK (Polyether Ether Ketone)": {
+    "Material Notes": "A high-performance thermoplastic known for its excellent mechanical properties, chemical resistance, and high-temperature stability.",
+    "Physical Properties": { "Density": "1.32 g/cc" },
+    "Mechanical Properties": { "Tensile Strength, Ultimate": "95.0 MPa", "Flexural Modulus": "3.6 GPa" },
+    "Thermal Properties": { "Maximum Continuous Service Temperature": "250 °C", "Thermal Conductivity": "0.25 W/m-K" }
+  },
+  "Inconel 718": {
+    "Material Notes": "A precipitation-hardenable nickel-chromium superalloy characterized by high strength, high temperature resistance, and corrosion resistance.",
+    "Physical Properties": { "Density": "8.19 g/cc" },
+    "Mechanical Properties": { "Tensile Strength, Ultimate": "1375 MPa", "Tensile Strength, Yield": "1100 MPa" },
+    "Thermal Properties": { "Melting Point": "1260 - 1336 °C", "Thermal Conductivity": "11.4 W/m-K" }
+  },
+  "Inconel 625": {
+    "Material Notes": "Nickel-chromium superalloy with excellent corrosion and oxidation resistance.",
+    "Physical Properties": { "Density": "8.44 g/cc" },
+    "Mechanical Properties": {
+      "Tensile Strength, Ultimate": "827 MPa",
+      "Tensile Strength, Yield": "414 MPa"
+    },
+    "Thermal Properties": { "Melting Point": "1290 - 1350 °C", "Thermal Conductivity": "9.8 W/m-K" }
+  },
+  "Hastelloy C-276": {
+    "Material Notes": "Nickel-molybdenum-chromium alloy with excellent corrosion resistance in severe environments.",
+    "Physical Properties": { "Density": "8.89 g/cc" },
+    "Mechanical Properties": {
+      "Tensile Strength, Ultimate": "783 MPa",
+      "Tensile Strength, Yield": "355 MPa"
+    },
+    "Thermal Properties": { "Melting Point": "1323 - 1371 °C", "Thermal Conductivity": "10.0 W/m-K" }
+  },
+  "G-10/FR-4 Glass Epoxy Composite": {
+    "Material Notes": "A high-pressure thermoset laminate of woven fiberglass and epoxy resin, valued for its high strength, low moisture absorption, and excellent electrical insulating properties.",
+    "Physical Properties": { "Density": "1.85 g/cc", "Water Absorption (24 hr)": "0.10 %" },
+    "Mechanical Properties": { "Flexural Strength": "414 MPa", "Compressive Strength": "345 MPa" },
+    "Thermal Properties": { "Maximum Operating Temperature": "140 °C", "Thermal Conductivity": "0.29 W/m-K" }
+  },
+  "Carbon Fiber Composite (Epoxy)": {
+    "Material Notes": "High-performance composite with exceptional strength-to-weight ratio.",
+    "Physical Properties": { "Density": "1.55 g/cc" },
+    "Mechanical Properties": {
+      "Tensile Strength, Ultimate": "1500 MPa",
+      "Tensile Modulus": "150 GPa"
+    },
+    "Thermal Properties": { "Maximum Service Temperature": "120 °C" }
+  },
+  "Beryllium Copper (C17200)": {
+    "Material Notes": "A high-strength copper-based alloy that offers a unique combination of high strength, hardness, conductivity, and corrosion resistance.",
+    "Physical Properties": { "Density": "8.25 g/cc" },
+    "Mechanical Properties": { "Tensile Strength, Ultimate": "1140 - 1480 MPa", "Hardness, Rockwell C": "36 - 45" },
+    "Thermal Properties": { "Thermal Conductivity": "105 W/m-K", "Melting Point": "866 - 982 °C" }
+  },
+  "Brass C360": {
+    "Material Notes": "Free-cutting brass with excellent machinability.",
+    "Physical Properties": { "Density": "8.50 g/cc" },
+    "Mechanical Properties": {
+      "Tensile Strength, Ultimate": "470 MPa",
+      "Tensile Strength, Yield": "125 MPa"
+    },
+    "Thermal Properties": { "Thermal Conductivity": "115 W/m-K", "Melting Point": "885 - 900 °C" }
+  },
+  "Bronze (Phosphor Bronze)": {
+    "Material Notes": "Copper-tin-phosphorus alloy with good corrosion resistance, fatigue resistance, and low friction.",
+    "Physical Properties": { "Density": "8.80 g/cc" },
+    "Mechanical Properties": {
+      "Tensile Strength, Ultimate": "450 MPa",
+      "Tensile Strength, Yield": "200 MPa"
+    },
+    "Thermal Properties": { "Thermal Conductivity": "50 W/m-K", "Melting Point": "950 - 1000 °C" }
+  },
+  "Copper C110 (Electrolytic Tough Pitch)": {
+    "Material Notes": "High-purity copper with excellent electrical and thermal conductivity.",
+    "Physical Properties": { "Density": "8.94 g/cc" },
+    "Mechanical Properties": {
+      "Tensile Strength, Ultimate": "220 MPa",
+      "Tensile Strength, Yield": "69 MPa"
+    },
+    "Thermal Properties": { "Thermal Conductivity": "391 W/m-K", "Melting Point": "1083 °C" }
+  },
+  "Magnesium AZ31B": {
+    "Material Notes": "Lightweight structural magnesium alloy with good room-temperature strength.",
+    "Physical Properties": { "Density": "1.78 g/cc" },
+    "Mechanical Properties": {
+      "Tensile Strength, Ultimate": "260 MPa",
+      "Tensile Strength, Yield": "200 MPa"
+    },
+    "Thermal Properties": { "Thermal Conductivity": "96 W/m-K", "Melting Point": "605 - 630 °C" }
+  },
+  "Zinc Alloy (Zamak 3)": {
+    "Material Notes": "Die-casting alloy with good strength and excellent castability.",
+    "Physical Properties": { "Density": "6.60 g/cc" },
+    "Mechanical Properties": {
+      "Tensile Strength, Ultimate": "283 MPa",
+      "Tensile Strength, Yield": "221 MPa"
+    },
+    "Thermal Properties": { "Melting Point": "386 °C" }
+  },
+  "Lead": {
+    "Material Notes": "Dense, soft metal with excellent radiation shielding and sound damping properties.",
+    "Physical Properties": { "Density": "11.34 g/cc" },
+    "Mechanical Properties": {
+      "Tensile Strength, Ultimate": "18 MPa",
+      "Modulus of Elasticity": "16 GPa"
+    },
+    "Thermal Properties": { "Thermal Conductivity": "35.3 W/m-K", "Melting Point": "327 °C" }
+  },
+  "Tungsten": {
+    "Material Notes": "Refractory metal with highest melting point of all elements, used in high-temperature applications.",
+    "Physical Properties": { "Density": "19.25 g/cc" },
+    "Mechanical Properties": {
+      "Tensile Strength, Ultimate": "1510 MPa",
+      "Modulus of Elasticity": "411 GPa"
+    },
+    "Thermal Properties": { "Thermal Conductivity": "173 W/m-K", "Melting Point": "3422 °C" }
+  },
+  "Molybdenum": {
+    "Material Notes": "Refractory metal with high melting point and good thermal conductivity.",
+    "Physical Properties": { "Density": "10.22 g/cc" },
+    "Mechanical Properties": {
+      "Tensile Strength, Ultimate": "655 MPa",
+      "Modulus of Elasticity": "329 GPa"
+    },
+    "Thermal Properties": { "Thermal Conductivity": "138 W/m-K", "Melting Point": "2623 °C" }
+  },
+  "Silicone Rubber, General Purpose": {
+    "Material Notes": "A highly versatile elastomer known for its wide service temperature range, flexibility, and resistance to UV, ozone, and moisture.",
+    "Physical Properties": { "Density": "1.10 - 1.60 g/cc" },
+    "Mechanical Properties": { "Tensile Strength, Ultimate": "5 - 10 MPa", "Elongation at Break": "300 - 800 %" },
+    "Thermal Properties": { "Service Temperature Range": "-55 to 230 °C" }
+  },
+  "Nitrile Rubber (NBR)": {
+    "Material Notes": "Synthetic rubber with excellent oil and fuel resistance.",
+    "Physical Properties": { "Density": "1.00 g/cc" },
+    "Mechanical Properties": {
+      "Tensile Strength, Ultimate": "25 MPa",
+      "Elongation at Break": "600 %"
+    },
+    "Thermal Properties": { "Service Temperature Range": "-40 to 108 °C" }
+  },
+  "EPDM Rubber": {
+    "Material Notes": "Synthetic rubber with excellent weather, ozone, and UV resistance.",
+    "Physical Properties": { "Density": "0.86 g/cc" },
+    "Mechanical Properties": {
+      "Tensile Strength, Ultimate": "15 MPa",
+      "Elongation at Break": "500 %"
+    },
+    "Thermal Properties": { "Service Temperature Range": "-40 to 150 °C" }
+  },
+  "Viton (FKM)": {
+    "Material Notes": "Fluoroelastomer with exceptional chemical and heat resistance.",
+    "Physical Properties": { "Density": "1.85 g/cc" },
+    "Mechanical Properties": {
+      "Tensile Strength, Ultimate": "16 MPa",
+      "Elongation at Break": "350 %"
+    },
+    "Thermal Properties": { "Service Temperature Range": "-20 to 205 °C" }
+  },
+  "Polyethylene (HDPE)": {
+    "Material Notes": "High-density polyethylene with good chemical resistance and impact strength.",
+    "Physical Properties": { "Density": "0.95 g/cc" },
+    "Mechanical Properties": {
+      "Tensile Strength, Ultimate": "26 MPa",
+      "Modulus of Elasticity": "1.10 GPa"
+    },
+    "Thermal Properties": { "Melting Point": "130 °C" }
+  },
+  "Polypropylene (PP)": {
+    "Material Notes": "Versatile thermoplastic with good chemical resistance and fatigue resistance.",
+    "Physical Properties": { "Density": "0.90 g/cc" },
+    "Mechanical Properties": {
+      "Tensile Strength, Ultimate": "32 MPa",
+      "Modulus of Elasticity": "1.50 GPa"
+    },
+    "Thermal Properties": { "Melting Point": "160 °C" }
+  },
+  "PVC (Polyvinyl Chloride)": {
+    "Material Notes": "Common thermoplastic used in construction, piping, and electrical insulation.",
+    "Physical Properties": { "Density": "1.40 g/cc" },
+    "Mechanical Properties": {
+      "Tensile Strength, Ultimate": "52 MPa",
+      "Modulus of Elasticity": "2.90 GPa"
+    },
+    "Thermal Properties": { "Heat Deflection Temperature": "65 °C" }
+  },
+  "PET (Polyethylene Terephthalate)": {
+    "Material Notes": "Engineering thermoplastic used in bottles, fibers, and films.",
+    "Physical Properties": { "Density": "1.38 g/cc" },
+    "Mechanical Properties": {
+      "Tensile Strength, Ultimate": "70 MPa",
+      "Modulus of Elasticity": "3.00 GPa"
+    },
+    "Thermal Properties": { "Melting Point": "260 °C" }
+  },
+  "Ultem (PEI)": {
+    "Material Notes": "High-performance thermoplastic with excellent thermal and mechanical properties.",
+    "Physical Properties": { "Density": "1.27 g/cc" },
+    "Mechanical Properties": {
+      "Tensile Strength, Ultimate": "105 MPa",
+      "Modulus of Elasticity": "3.30 GPa"
+    },
+    "Thermal Properties": { "Heat Deflection Temperature": "200 °C" }
+  },
+  "Glass (Borosilicate)": {
+    "Material Notes": "Heat-resistant glass with low thermal expansion, used in laboratory equipment.",
+    "Physical Properties": { "Density": "2.23 g/cc" },
+    "Mechanical Properties": {
+      "Tensile Strength, Ultimate": "40 MPa",
+      "Modulus of Elasticity": "63 GPa"
+    },
+    "Thermal Properties": { "Thermal Conductivity": "1.2 W/m-K", "Softening Point": "820 °C" }
+  },
+  "Ceramic (Alumina Al2O3)": {
+    "Material Notes": "High-purity ceramic with excellent hardness, wear resistance, and electrical insulation.",
+    "Physical Properties": { "Density": "3.95 g/cc" },
+    "Mechanical Properties": {
+      "Flexural Strength": "379 MPa",
+      "Modulus of Elasticity": "370 GPa"
+    },
+    "Thermal Properties": { "Thermal Conductivity": "30 W/m-K", "Melting Point": "2072 °C" }
+  },
+  "Silicon Carbide (SiC)": {
+    "Material Notes": "Advanced ceramic with exceptional hardness and thermal shock resistance.",
+    "Physical Properties": { "Density": "3.10 g/cc" },
+    "Mechanical Properties": {
+      "Flexural Strength": "550 MPa",
+      "Modulus of Elasticity": "410 GPa"
+    },
+    "Thermal Properties": { "Thermal Conductivity": "120 W/m-K", "Melting Point": "2730 °C" }
+  },
+  "Zirconia (ZrO2)": {
+    "Material Notes": "Advanced ceramic with high fracture toughness and wear resistance.",
+    "Physical Properties": { "Density": "6.05 g/cc" },
+    "Mechanical Properties": {
+      "Flexural Strength": "1200 MPa",
+      "Modulus of Elasticity": "210 GPa"
+    },
+    "Thermal Properties": { "Thermal Conductivity": "2.0 W/m-K", "Melting Point": "2715 °C" }
+  },
+  "Concrete (Structural)": {
+    "Material Notes": "Composite material widely used in construction with good compressive strength.",
+    "Physical Properties": { "Density": "2.40 g/cc" },
+    "Mechanical Properties": {
+      "Compressive Strength": "30 - 40 MPa",
+      "Modulus of Elasticity": "30 GPa"
+    },
+    "Thermal Properties": { "Thermal Conductivity": "1.4 W/m-K" }
+  },
+  "Wood (Oak)": {
+    "Material Notes": "Hardwood with good strength and attractive grain pattern.",
+    "Physical Properties": { "Density": "0.75 g/cc" },
+    "Mechanical Properties": {
+      "Compressive Strength": "51 MPa",
+      "Modulus of Elasticity": "12.5 GPa"
+    },
+    "Thermal Properties": { "Thermal Conductivity": "0.17 W/m-K" }
+  },
+  "Graphite": {
+    "Material Notes": "Carbon material with excellent thermal and electrical conductivity, used in electrodes and lubricants.",
+    "Physical Properties": { "Density": "2.26 g/cc" },
+    "Mechanical Properties": {
+      "Flexural Strength": "70 MPa",
+      "Modulus of Elasticity": "10 GPa"
+    },
+    "Thermal Properties": { "Thermal Conductivity": "150 W/m-K", "Sublimation Point": "3650 °C" }
+  },
+  "Kevlar (Aramid Fiber)": {
+    "Material Notes": "High-strength synthetic fiber used in bulletproof vests and composite materials.",
+    "Physical Properties": { "Density": "1.44 g/cc" },
+    "Mechanical Properties": {
+      "Tensile Strength, Ultimate": "3620 MPa",
+      "Tensile Modulus": "112.4 GPa"
+    },
+    "Thermal Properties": { "Decomposition Temperature": "427 °C" }
+  }
+}

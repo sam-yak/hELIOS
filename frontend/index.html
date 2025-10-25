@@ -44,108 +44,143 @@
              <div><label>Format:</label><select id="export-format"><option value="csv">CSV</option><option value="json">JSON</option><option value="txt">Plain Text</option></select><button id="export-button">Export Data</button></div>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/14.1.0/markdown-it.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/markdown-it@14.1.0/dist/markdown-it.min.js"></script>
     
     <script>
-        console.log("✅ Script block executed. Initializing Helios frontend.");
-        const md = window.markdownit();
-        const queryForm = document.getElementById('query-form');
-        const questionInput = document.getElementById('question-input');
-        const queryButton = document.getElementById('query-button');
-        const newChatButton = document.getElementById('new-chat-button');
-        const chatLog = document.getElementById('chat-log');
-        const exportSection = document.getElementById('export-section');
-        const exportMaterialName = document.getElementById('export-material-name');
-        const exportButton = document.getElementById('export-button');
-        let chatHistory = [];
-        let currentMaterial = '';
-        function renderAiMessage(answer, sources) {
-            const messageDiv = document.createElement('div');
-            messageDiv.classList.add('message', 'ai-message');
-            const answerDiv = document.createElement('div');
-            answerDiv.innerHTML = md.render(answer);
-            messageDiv.appendChild(answerDiv);
-            if (sources && sources.length > 0) {
-                const sourcesContainer = document.createElement('div');
-                sourcesContainer.className = 'sources-container';
-                const sourcesTitle = document.createElement('strong');
-                sourcesTitle.innerText = 'Sources:';
-                sourcesContainer.appendChild(sourcesTitle);
-                sources.forEach(source => {
-                    const sourceItem = document.createElement('div');
-                    const sourceHeader = document.createElement('div');
-                    sourceHeader.className = 'source-header';
-                    sourceHeader.innerText = source.source;
-                    const sourceContent = document.createElement('div');
-                    sourceContent.className = 'source-content';
-                    sourceContent.innerText = source.content;
-                    sourceHeader.addEventListener('click', () => {
-                        sourceHeader.classList.toggle('active');
-                        sourceContent.style.display = sourceContent.style.display === 'block' ? 'none' : 'block';
-                    });
-                    sourceItem.appendChild(sourceHeader);
-                    sourceItem.appendChild(sourceContent);
-                    sourcesContainer.appendChild(sourceItem);
+    console.log("✅ Script block executed. Initializing Helios frontend.");
+    
+    // Initialize markdown parser (with fallback)
+    const md = window.markdownit ? window.markdownit() : {
+        render: (text) => text.replace(/\n/g, '<br>')  // Fallback if markdown-it fails
+    };
+    
+    const queryForm = document.getElementById('query-form');
+    const questionInput = document.getElementById('question-input');
+    const queryButton = document.getElementById('query-button');
+    const newChatButton = document.getElementById('new-chat-button');
+    const chatLog = document.getElementById('chat-log');
+    const exportSection = document.getElementById('export-section');
+    const exportMaterialName = document.getElementById('export-material-name');
+    const exportButton = document.getElementById('export-button');
+    
+    let chatHistory = [];
+    let currentMaterial = '';
+    
+    function renderAiMessage(answer, sources) {
+        const messageDiv = document.createElement('div');
+        messageDiv.classList.add('message', 'ai-message');
+        const answerDiv = document.createElement('div');
+        answerDiv.innerHTML = md.render(answer);
+        messageDiv.appendChild(answerDiv);
+        
+        if (sources && sources.length > 0) {
+            const sourcesContainer = document.createElement('div');
+            sourcesContainer.className = 'sources-container';
+            const sourcesTitle = document.createElement('strong');
+            sourcesTitle.innerText = 'Sources:';
+            sourcesContainer.appendChild(sourcesTitle);
+            
+            sources.forEach(source => {
+                const sourceItem = document.createElement('div');
+                const sourceHeader = document.createElement('div');
+                sourceHeader.className = 'source-header';
+                sourceHeader.innerText = source.source;
+                const sourceContent = document.createElement('div');
+                sourceContent.className = 'source-content';
+                sourceContent.innerText = source.content;
+                sourceHeader.addEventListener('click', () => {
+                    sourceHeader.classList.toggle('active');
+                    sourceContent.style.display = sourceContent.style.display === 'block' ? 'none' : 'block';
                 });
-                messageDiv.appendChild(sourcesContainer);
-            }
-            chatLog.appendChild(messageDiv);
-            chatLog.scrollTop = chatLog.scrollHeight;
+                sourceItem.appendChild(sourceHeader);
+                sourceItem.appendChild(sourceContent);
+                sourcesContainer.appendChild(sourceItem);
+            });
+            messageDiv.appendChild(sourcesContainer);
         }
-        function appendSimpleMessage(role, content) {
-            const messageDiv = document.createElement('div');
-            messageDiv.classList.add('message', role === 'user' ? 'user-message' : 'ai-message');
-            messageDiv.innerText = content;
-            chatLog.appendChild(messageDiv);
-            chatLog.scrollTop = chatLog.scrollHeight;
-        }
-        queryForm.addEventListener('submit', async function(event) {
-            event.preventDefault();
-            const question = questionInput.value;
-            if (!question.trim()) return;
-            appendSimpleMessage('user', question);
-            chatHistory.push({ role: 'user', content: question });
-            questionInput.value = '';
-            appendSimpleMessage('ai', 'Helios is thinking...');
-            queryButton.disabled = true;
-            queryButton.innerText = 'Processing...';
-            exportSection.style.display = 'none';
-            try {
-                const response = await fetch('/query', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ question: question, chat_history: chatHistory.slice(0, -1) })
-                });
-                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-                const data = await response.json();
-                chatLog.removeChild(chatLog.lastChild);
-                renderAiMessage(data.answer, data.sources);
-                chatHistory.push({ role: 'ai', content: data.answer });
-                if (data.detected_material) {
-                   currentMaterial = data.detected_material;
-                   exportMaterialName.innerText = currentMaterial;
-                   exportSection.style.display = 'flex';
-                }
-            } catch (error) {
-                console.error('Error fetching response:', error);
-                chatLog.removeChild(chatLog.lastChild);
-                appendSimpleMessage('ai', 'An error occurred. Please check the browser console for details.');
-            } finally {
-                queryButton.disabled = false;
-                queryButton.innerText = 'Ask Helios';
+        chatLog.appendChild(messageDiv);
+        chatLog.scrollTop = chatLog.scrollHeight;
+    }
+    
+    function appendSimpleMessage(role, content) {
+        const messageDiv = document.createElement('div');
+        messageDiv.classList.add('message', role === 'user' ? 'user-message' : 'ai-message');
+        messageDiv.innerText = content;
+        chatLog.appendChild(messageDiv);
+        chatLog.scrollTop = chatLog.scrollHeight;
+    }
+    
+    queryForm.addEventListener('submit', async function(event) {
+        event.preventDefault();
+        const question = questionInput.value;
+        if (!question.trim()) return;
+        
+        console.log("📤 Sending query:", question);
+        
+        appendSimpleMessage('user', question);
+        chatHistory.push({ role: 'user', content: question });
+        questionInput.value = '';
+        appendSimpleMessage('ai', 'Helios is thinking...');
+        queryButton.disabled = true;
+        queryButton.innerText = 'Processing...';
+        exportSection.style.display = 'none';
+        
+        try {
+            console.log("🔄 Fetching from /query endpoint...");
+            const response = await fetch('/query', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ 
+                    question: question, 
+                    chat_history: chatHistory.slice(0, -1) 
+                })
+            });
+            
+            console.log("📥 Response status:", response.status);
+            
+            if (!response.ok) {
+                const errorText = await response.text();
+                console.error("❌ Error response:", errorText);
+                throw new Error(`HTTP error! status: ${response.status}`);
             }
-        });
-        newChatButton.addEventListener('click', function() {
-            chatHistory = [];
-            chatLog.innerHTML = '';
-            exportSection.style.display = 'none';
-            currentMaterial = '';
-            questionInput.value = '';
-        });
-        exportButton.addEventListener('click', async function() {
-            if (!currentMaterial) return;
-            const format = document.getElementById('export-format').value;
-        });
-    </script>
+            
+            const data = await response.json();
+            console.log("✅ Response data:", data);
+            
+            chatLog.removeChild(chatLog.lastChild);
+            renderAiMessage(data.answer, data.sources);
+            chatHistory.push({ role: 'ai', content: data.answer });
+            
+            if (data.detected_material) {
+               currentMaterial = data.detected_material;
+               exportMaterialName.innerText = currentMaterial;
+               exportSection.style.display = 'flex';
+            }
+        } catch (error) {
+            console.error('❌ Error fetching response:', error);
+            chatLog.removeChild(chatLog.lastChild);
+            appendSimpleMessage('ai', 'Error: ' + error.message + '. Check console for details.');
+        } finally {
+            queryButton.disabled = false;
+            queryButton.innerText = 'Ask Helios';
+        }
+    });
+    
+    newChatButton.addEventListener('click', function() {
+        chatHistory = [];
+        chatLog.innerHTML = '';
+        exportSection.style.display = 'none';
+        currentMaterial = '';
+        questionInput.value = '';
+    });
+    
+    exportButton.addEventListener('click', async function() {
+        if (!currentMaterial) return;
+        const format = document.getElementById('export-format').value;
+        console.log("📦 Exporting:", currentMaterial, "as", format);
+    });
+    
+    console.log("✅ Helios frontend initialized successfully!");
+   </script>
 </body>
 </html>

@@ -138,7 +138,7 @@ torch==2.8.0
 tqdm==4.67.1
 transformers==4.55.0
 trio==0.30.0
-trio-websocket==0.12.0
+trio-websocket==0.12.2
 typer==0.16.0
 typing-inspect==0.9.0
 typing-inspection==0.4.1
