@@ -1,8 +1,5 @@
-#from dotenv import load_dotenv  
-#load_dotenv()
-
 # =================================================================================================
-# HELIOS ENGINEERING ASSISTANT - V2 WITH UNIFIED DATABASE
+# HELIOS ENGINEERING ASSISTANT - V2 WITH HYBRID RETRIEVAL
 # =================================================================================================
 
 import os
@@ -10,49 +7,55 @@ import json
 from typing import List
 from datetime import datetime
 from fastapi import FastAPI, Response
-from fastapi.responses import HTMLResponse
+from fastapi.responses import HTMLResponse, JSONResponse
 from pydantic import BaseModel
 from langchain_core.messages import HumanMessage, AIMessage
 from langchain.chains import create_history_aware_retriever, create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
-from langchain.chains.query_constructor.base import AttributeInfo
-from langchain.retrievers.self_query.base import SelfQueryRetriever
 from langchain_community.vectorstores import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 
-# Import our logging utility
+# Load environment variables
+from dotenv import load_dotenv
+load_dotenv()
+
+# Import our modules
 from utils.logger import setup_logger, log_query_metrics
+from retrieval.document_loader import load_documents_from_json
+from retrieval.hybrid_retriever import create_hybrid_retriever
 
 # --- LOGGING SETUP ---
 logger = setup_logger("helios", "helios.log")
 
 # --- 1. API DATA MODELS ---
 class ChatHistory(BaseModel): role: str; content: str
-class QueryRequest(BaseModel): question: str; chat_history: List[ChatHistory]
+class QueryRequest(BaseModel): question: str; chat_history: List[ChatHistory]; use_hybrid: bool = True
 class SourceDocument(BaseModel): source: str; content: str
-class QueryResponse(BaseModel): answer: str; detected_material: str | None = None; sources: List[SourceDocument]
+class QueryResponse(BaseModel): answer: str; detected_material: str | None = None; sources: List[SourceDocument]; retrieval_method: str = "hybrid"
 class ExportRequest(BaseModel): material_name: str; export_format: str
+class CompareRequest(BaseModel): query: str; k: int = 5
 
 # --- 2. ENVIRONMENT & DATA SETUP ---
-logger.info("🚀 Starting Helios V2 initialization...")
+logger.info("🚀 Starting Helios V2 (Hybrid Retrieval) initialization...")
+logger.info(f"Environment: {os.getenv('HELIOS_ENV', 'development')}")
 
 if "OPENAI_API_KEY" not in os.environ:
-    logger.critical("❌ OPENAI_API_KEY environment variable not set!")
+    logger.critical("❌ OPENAI_API_KEY not found in environment!")
     raise ValueError("FATAL ERROR: OPENAI_API_KEY environment variable not set.")
 
-logger.info("✅ OpenAI API key found")
+logger.info("✅ OpenAI API key loaded from environment")
 
-# Load unified materials database
+if os.getenv("LANGCHAIN_TRACING_V2") == "true":
+    logger.info("✅ LangSmith tracing enabled")
+
+# Load materials database
 MATERIALS_DB_PATH = "materials_database.json"
 try:
     with open(MATERIALS_DB_PATH, 'r') as f:
         materials_database = json.load(f)
     logger.info(f"✅ Loaded unified materials database: {len(materials_database)} materials")
-except FileNotFoundError:
-    logger.error(f"❌ {MATERIALS_DB_PATH} not found! Using empty database.")
-    materials_database = {}
 except Exception as e:
     logger.error(f"❌ Failed to load materials database: {e}")
     materials_database = {}
@@ -75,40 +78,26 @@ except Exception as e:
     logger.error(f"❌ Failed to initialize AI components: {e}")
     raise
 
-# --- 4. THE ANALYTICAL & SELECTION AGENT (SELF-QUERY RETRIEVER) ---
+# --- 4. HYBRID RETRIEVAL SETUP ---
 try:
-    logger.info("Setting up self-query retriever...")
+    logger.info("🔧 Setting up Hybrid Retrieval System...")
     
-    metadata_field_info = [
-        AttributeInfo(name="material_name", description="The common name of the material", type="string"),
-        AttributeInfo(name="category", description="Material category (e.g., 'Aluminum Alloys', 'Stainless Steels')", type="string"),
-        AttributeInfo(name="tensile_strength_ultimate", description="The ultimate tensile strength in MPa", type="float"),
-        AttributeInfo(name="tensile_strength_yield", description="The yield strength in MPa", type="float"),
-        AttributeInfo(name="density", description="The density in g/cc", type="float"),
-        AttributeInfo(name="thermal_conductivity", description="The thermal conductivity in W/m-K", type="float"),
-        AttributeInfo(name="melting_point", description="The melting point in Celsius", type="float"),
-        AttributeInfo(name="cost_per_kg_usd", description="Cost per kilogram in USD", type="float"),
-        AttributeInfo(name="sustainability_score", description="Sustainability score from 1-10 (10 is best)", type="float"),
-    ]
-    document_content_description = "A comprehensive technical datasheet for an engineering material including physical, mechanical, thermal, economic, and sustainability properties."
-
-    self_query_retriever = SelfQueryRetriever.from_llm(
-        llm=llm,
-        vectorstore=vector_store,
-        document_contents=document_content_description,
-        metadata_field_info=metadata_field_info,
-        verbose=False
-    )
+    # Load all documents for BM25
+    logger.info("   Loading documents for BM25 indexing...")
+    all_documents = load_documents_from_json(MATERIALS_DB_PATH)
+    logger.info(f"   ✓ Loaded {len(all_documents)} documents")
     
-    logger.info("✅ Self-query retriever configured")
+    # Create hybrid retriever
+    hybrid_retriever = create_hybrid_retriever(vector_store, all_documents)
+    logger.info("✅ Hybrid Retrieval System ready")
     
 except Exception as e:
-    logger.error(f"❌ Failed to setup retriever: {e}")
+    logger.error(f"❌ Failed to setup hybrid retrieval: {e}")
     raise
 
-# --- 5. THE ONE TRUE CHAIN: CONVERSATIONAL & ANALYTICAL RAG ---
+# --- 5. RAG CHAIN WITH HYBRID RETRIEVAL ---
 try:
-    logger.info("Building RAG chain...")
+    logger.info("Building RAG chain with hybrid retrieval...")
     
     rephrase_prompt = ChatPromptTemplate.from_messages([
         ("system", "Given a chat history and the latest user question, formulate a standalone question that can be understood without the chat history. Do NOT answer the question, just reformulate it if needed."),
@@ -122,24 +111,23 @@ try:
         ("human", "{input}")
     ])
 
-    history_aware_retriever = create_history_aware_retriever(llm, self_query_retriever, rephrase_prompt)
-    question_answer_chain = create_stuff_documents_chain(llm, answer_prompt)
-    rag_chain = create_retrieval_chain(history_aware_retriever, question_answer_chain)
+    # Create history-aware retriever using our hybrid retriever
+    # Note: We'll manually handle retrieval in the query endpoint to have more control
     
+    question_answer_chain = create_stuff_documents_chain(llm, answer_prompt)
     logger.info("✅ RAG chain built successfully")
     
 except Exception as e:
     logger.error(f"❌ Failed to build RAG chain: {e}")
     raise
 
-logger.info("🎉 Helios V2 Core Logic Initialized. The Agent is online and ready.")
+logger.info("🎉 Helios V2 (Hybrid) Initialized. The Agent is online and ready.")
 
 # --- 6. FASTAPI APPLICATION SETUP ---
-app = FastAPI(title="Helios V2 - Engineering Assistant")
+app = FastAPI(title="Helios V2 - Engineering Assistant with Hybrid Retrieval")
 
 @app.get("/", include_in_schema=False)
 async def read_index():
-    logger.debug("Serving frontend index.html")
     try:
         with open('frontend/index.html', 'r') as f:
             html_content = f.read()
@@ -148,34 +136,39 @@ async def read_index():
         logger.error(f"Failed to serve index.html: {e}")
         raise
 
-@app.post("/query", summary="Query the engineering assistant", response_model=QueryResponse)
+@app.post("/query", summary="Query with hybrid retrieval", response_model=QueryResponse)
 def query_agent(request: QueryRequest):
     start_time = datetime.now()
     query_text = request.question
+    use_hybrid = request.use_hybrid
     
-    logger.info(f"📥 New query received: '{query_text[:100]}...'")
+    logger.info(f"📥 New query: '{query_text[:100]}...' [Method: {'Hybrid' if use_hybrid else 'Semantic-only'}]")
     
     try:
-        # Convert chat history to LangChain format
+        # Convert chat history
         langchain_chat_history = [
             HumanMessage(content=msg.content) if msg.role == 'user' else AIMessage(content=msg.content) 
             for msg in request.chat_history
         ]
         
-        logger.debug(f"Chat history length: {len(langchain_chat_history)}")
+        # Retrieve documents using hybrid or semantic-only
+        if use_hybrid:
+            retrieved_docs = hybrid_retriever.retrieve(query_text, k=5)
+            method = "hybrid"
+        else:
+            retrieved_docs = hybrid_retriever.retrieve_semantic_only(query_text, k=5)
+            method = "semantic_only"
         
-        # Execute RAG chain
-        logger.debug("Invoking RAG chain...")
-        result = rag_chain.invoke({
-            "input": request.question, 
+        logger.debug(f"Retrieved {len(retrieved_docs)} documents using {method}")
+        
+        # Generate answer using the retrieved context
+        answer_result = question_answer_chain.invoke({
+            "input": query_text,
+            "context": retrieved_docs,
             "chat_history": langchain_chat_history
         })
         
-        # Extract results
-        answer = result.get("answer", "I am sorry, I could not generate a response.")
-        source_docs = result.get("context", [])
-        
-        logger.debug(f"Retrieved {len(source_docs)} source documents")
+        answer = answer_result if isinstance(answer_result, str) else answer_result.get("answer", "No response generated")
         
         # Format sources
         formatted_sources = [
@@ -183,63 +176,85 @@ def query_agent(request: QueryRequest):
                 source=doc.metadata.get("source", "Unknown"), 
                 content=doc.page_content
             ) 
-            for doc in source_docs
+            for doc in retrieved_docs
         ]
         
-        # Detect material for export feature (now using unified database)
+        # Detect material
         detected_material = None
-        if source_docs:
-            primary_material_name = source_docs[0].metadata.get('material_name')
+        if retrieved_docs:
+            primary_material_name = retrieved_docs[0].metadata.get('material_name')
             if primary_material_name and primary_material_name in materials_database:
                 detected_material = primary_material_name
-                logger.debug(f"Detected material: {detected_material}")
-        
-        # Calculate response time
-        response_time = (datetime.now() - start_time).total_seconds()
         
         # Log metrics
-        log_query_metrics(logger, query_text, response_time, len(source_docs), success=True)
+        response_time = (datetime.now() - start_time).total_seconds()
+        log_query_metrics(logger, query_text, response_time, len(retrieved_docs), success=True)
         
-        logger.info(f"✅ Query completed successfully in {response_time:.2f}s")
+        logger.info(f"✅ Query completed in {response_time:.2f}s using {method}")
         
         return QueryResponse(
             answer=answer, 
             sources=formatted_sources, 
-            detected_material=detected_material
+            detected_material=detected_material,
+            retrieval_method=method
         )
         
     except Exception as e:
         response_time = (datetime.now() - start_time).total_seconds()
-        logger.error(f"❌ Query failed after {response_time:.2f}s: {str(e)}", exc_info=True)
-        
-        # Log failed query
+        logger.error(f"❌ Query failed: {str(e)}", exc_info=True)
         log_query_metrics(logger, query_text, response_time, 0, success=False)
         
-        # Return error response
         return QueryResponse(
-            answer=f"An error occurred while processing your query: {str(e)}", 
-            sources=[]
+            answer=f"An error occurred: {str(e)}", 
+            sources=[],
+            retrieval_method="error"
         )
+
+@app.post("/compare", summary="Compare retrieval methods")
+def compare_retrieval_methods(request: CompareRequest):
+    """
+    Compare semantic, keyword, and hybrid retrieval for a query.
+    Useful for demonstrating hybrid retrieval benefits.
+    """
+    logger.info(f"📊 Comparison request for: '{request.query}'")
+    
+    try:
+        comparison = hybrid_retriever.compare_methods(request.query, request.k)
+        
+        return JSONResponse(content={
+            "query": request.query,
+            "results": {
+                "semantic": comparison["semantic"],
+                "keyword": comparison["keyword"],
+                "hybrid": comparison["hybrid"]
+            },
+            "analysis": {
+                "semantic_count": len(comparison["semantic"]),
+                "keyword_count": len(comparison["keyword"]),
+                "hybrid_count": len(comparison["hybrid"]),
+                "unique_to_hybrid": list(set(comparison["hybrid"]) - 
+                                        set(comparison["semantic"]) - 
+                                        set(comparison["keyword"]))
+            }
+        })
+    except Exception as e:
+        logger.error(f"Comparison failed: {e}")
+        return JSONResponse(content={"error": str(e)}, status_code=500)
 
 @app.post("/export", summary="Export material data")
 def export_data(request: ExportRequest):
-    logger.info(f"📦 Export request for {request.material_name} as {request.export_format}")
+    logger.info(f"📦 Export request for {request.material_name}")
     
     try:
         material_data = materials_database.get(request.material_name)
-        
         if not material_data:
-            logger.warning(f"Material not found: {request.material_name}")
             return Response(status_code=404)
         
-        export_format = request.export_format
-        
-        if export_format == "json":
+        if request.export_format == "json":
             content = json.dumps(material_data, indent=2)
             media_type = "application/json"
             filename = f"{request.material_name}.json"
-        elif export_format == "csv":
-            # Create CSV from material data
+        elif request.export_format == "csv":
             content = "Property,Value\n"
             for key, value in material_data.items():
                 if isinstance(value, list):
@@ -248,7 +263,6 @@ def export_data(request: ExportRequest):
             media_type = "text/csv"
             filename = f"{request.material_name}.csv"
         else:
-            # Plain text format
             content = f"Material: {request.material_name}\n\n"
             for key, value in material_data.items():
                 if isinstance(value, list):
@@ -261,32 +275,30 @@ def export_data(request: ExportRequest):
             filename = f"{request.material_name}.txt"
         
         headers = {'Content-Disposition': f'attachment; filename="{filename}"'}
-        
         logger.info(f"✅ Export successful: {filename}")
         
         return Response(content=content, media_type=media_type, headers=headers)
-        
     except Exception as e:
-        logger.error(f"❌ Export failed: {str(e)}", exc_info=True)
+        logger.error(f"Export failed: {e}")
         return Response(status_code=500)
 
-@app.get("/health", summary="Health check endpoint")
+@app.get("/health")
 def health_check():
-    """Health check for monitoring"""
     return {
         "status": "healthy",
-        "version": "2.0.0",
+        "version": "2.1.0",
+        "features": ["hybrid_retrieval", "langsmith_tracing"],
         "materials_count": len(materials_database),
+        "environment": os.getenv("HELIOS_ENV", "development"),
+        "langsmith_enabled": os.getenv("LANGCHAIN_TRACING_V2") == "true",
         "timestamp": datetime.now().isoformat()
     }
 
-@app.get("/stats", summary="Database statistics")
+@app.get("/stats")
 def get_stats():
-    """Get statistics about the materials database"""
     if not materials_database:
         return {"error": "No materials database loaded"}
     
-    # Count by category
     categories = {}
     for material, data in materials_database.items():
         cat = data.get('category', 'Unknown')
@@ -295,16 +307,16 @@ def get_stats():
     return {
         "total_materials": len(materials_database),
         "categories": categories,
+        "retrieval_method": "hybrid",
         "sample_materials": list(materials_database.keys())[:10]
     }
 
-# Startup event
 @app.on_event("startup")
 async def startup_event():
-    logger.info("🌟 Helios V2 API server started successfully")
-    logger.info(f"📊 {len(materials_database)} materials loaded and ready")
+    logger.info("🌟 Helios V2 (Hybrid Retrieval) API server started")
+    logger.info(f"📊 {len(materials_database)} materials loaded")
+    logger.info(f"🔧 Hybrid retrieval active (semantic + BM25)")
 
-# Shutdown event
 @app.on_event("shutdown")
 async def shutdown_event():
-    logger.info("🛑 Helios V2 API server shutting down")
+    logger.info("🛑 Helios V2 shutting down")

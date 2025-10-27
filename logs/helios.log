@@ -164,3 +164,1555 @@
 2025-10-25 16:46:09 | helios | INFO | <module>:135 | 🎉 Helios V2 Core Logic Initialized. The Agent is online and ready.
 2025-10-25 16:46:09 | helios | INFO | startup_event:304 | 🌟 Helios V2 API server started successfully
 2025-10-25 16:46:09 | helios | INFO | startup_event:305 | 📊 0 materials loaded and ready
+2025-10-25 19:06:37 | helios | INFO | shutdown_event:310 | 🛑 Helios V2 API server shutting down
+2025-10-25 19:10:01 | helios | INFO | <module>:39 | 🚀 Starting Helios V2 initialization...
+2025-10-25 19:10:01 | helios | INFO | <module>:45 | ✅ OpenAI API key found
+2025-10-25 19:10:01 | helios | INFO | <module>:52 | ✅ Loaded unified materials database: 72 materials
+2025-10-25 19:10:01 | helios | INFO | <module>:62 | Loading embedding model...
+2025-10-25 19:10:06 | helios | INFO | <module>:64 | ✅ Embedding model loaded
+2025-10-25 19:10:06 | helios | INFO | <module>:66 | Loading vector store from db/...
+2025-10-25 19:10:07 | helios | INFO | <module>:68 | ✅ Vector store loaded
+2025-10-25 19:10:07 | helios | INFO | <module>:70 | Initializing LLM...
+2025-10-25 19:10:07 | helios | INFO | <module>:72 | ✅ LLM initialized
+2025-10-25 19:10:07 | helios | INFO | <module>:80 | Setting up self-query retriever...
+2025-10-25 19:10:07 | helios | INFO | <module>:103 | ✅ Self-query retriever configured
+2025-10-25 19:10:07 | helios | INFO | <module>:111 | Building RAG chain...
+2025-10-25 19:10:07 | helios | INFO | <module>:129 | ✅ RAG chain built successfully
+2025-10-25 19:10:07 | helios | INFO | <module>:135 | 🎉 Helios V2 Core Logic Initialized. The Agent is online and ready.
+2025-10-25 19:10:07 | helios | INFO | startup_event:304 | 🌟 Helios V2 API server started successfully
+2025-10-25 19:10:07 | helios | INFO | startup_event:305 | 📊 72 materials loaded and ready
+2025-10-25 19:10:24 | helios | INFO | query_agent:156 | 📥 New query received: 'tell me about aluminium...'
+2025-10-25 19:10:31 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 6.91s | Sources: 4 | Query: 'tell me about aluminium...'
+2025-10-25 19:10:31 | helios | INFO | query_agent:203 | ✅ Query completed successfully in 6.91s
+2025-10-25 19:16:26 | helios | INFO | shutdown_event:310 | 🛑 Helios V2 API server shutting down
+2025-10-25 19:19:08 | helios | INFO | <module>:39 | 🚀 Starting Helios V2 initialization...
+2025-10-25 19:19:08 | helios | INFO | <module>:45 | ✅ OpenAI API key found
+2025-10-25 19:19:08 | helios | INFO | <module>:52 | ✅ Loaded unified materials database: 72 materials
+2025-10-25 19:19:08 | helios | INFO | <module>:62 | Loading embedding model...
+2025-10-25 19:19:13 | helios | INFO | <module>:64 | ✅ Embedding model loaded
+2025-10-25 19:19:14 | helios | INFO | <module>:66 | Loading vector store from db/...
+2025-10-25 19:19:14 | helios | INFO | <module>:68 | ✅ Vector store loaded
+2025-10-25 19:19:14 | helios | INFO | <module>:70 | Initializing LLM...
+2025-10-25 19:19:14 | helios | INFO | <module>:72 | ✅ LLM initialized
+2025-10-25 19:19:14 | helios | INFO | <module>:80 | Setting up self-query retriever...
+2025-10-25 19:19:14 | helios | INFO | <module>:103 | ✅ Self-query retriever configured
+2025-10-25 19:19:14 | helios | INFO | <module>:111 | Building RAG chain...
+2025-10-25 19:19:14 | helios | INFO | <module>:129 | ✅ RAG chain built successfully
+2025-10-25 19:19:14 | helios | INFO | <module>:135 | 🎉 Helios V2 Core Logic Initialized. The Agent is online and ready.
+2025-10-25 19:19:14 | helios | INFO | startup_event:304 | 🌟 Helios V2 API server started successfully
+2025-10-25 19:19:14 | helios | INFO | startup_event:305 | 📊 72 materials loaded and ready
+2025-10-25 19:19:28 | helios | INFO | query_agent:156 | 📥 New query received: 'what is peek material?...'
+2025-10-25 19:19:31 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 2.74s | Sources: 4 | Query: 'what is peek material?...'
+2025-10-25 19:19:31 | helios | INFO | query_agent:203 | ✅ Query completed successfully in 2.74s
+2025-10-25 22:04:45 | helios | INFO | shutdown_event:310 | 🛑 Helios V2 API server shutting down
+2025-10-25 22:21:15 | helios | INFO | <module>:41 | 🚀 Starting Helios V2 initialization...
+2025-10-25 22:21:15 | helios | INFO | <module>:42 | Environment: development
+2025-10-25 22:21:15 | helios | INFO | <module>:49 | ✅ OpenAI API key loaded from environment
+2025-10-25 22:21:15 | helios | INFO | <module>:53 | ✅ LangSmith tracing enabled
+2025-10-25 22:21:15 | helios | INFO | <module>:62 | ✅ Loaded unified materials database: 72 materials
+2025-10-25 22:21:15 | helios | INFO | <module>:72 | Loading embedding model...
+2025-10-25 22:21:20 | helios | INFO | <module>:74 | ✅ Embedding model loaded
+2025-10-25 22:21:20 | helios | INFO | <module>:76 | Loading vector store from db/...
+2025-10-25 22:21:21 | helios | INFO | <module>:78 | ✅ Vector store loaded
+2025-10-25 22:21:21 | helios | INFO | <module>:80 | Initializing LLM...
+2025-10-25 22:21:21 | helios | INFO | <module>:82 | ✅ LLM initialized
+2025-10-25 22:21:21 | helios | INFO | <module>:90 | Setting up self-query retriever...
+2025-10-25 22:21:21 | helios | INFO | <module>:113 | ✅ Self-query retriever configured
+2025-10-25 22:21:21 | helios | INFO | <module>:121 | Building RAG chain...
+2025-10-25 22:21:21 | helios | INFO | <module>:139 | ✅ RAG chain built successfully
+2025-10-25 22:21:21 | helios | INFO | <module>:145 | 🎉 Helios V2 Core Logic Initialized. The Agent is online and ready.
+2025-10-25 22:21:21 | helios | INFO | startup_event:314 | 🌟 Helios V2 API server started successfully
+2025-10-25 22:21:21 | helios | INFO | startup_event:315 | 📊 72 materials loaded and ready
+2025-10-25 22:21:21 | helios | INFO | startup_event:316 | 🔧 Environment: development
+2025-10-25 22:22:02 | helios | INFO | query_agent:166 | 📥 New query received: 'what is the peek material...'
+2025-10-25 22:22:11 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 9.53s | Sources: 4 | Query: 'what is the peek material...'
+2025-10-25 22:22:11 | helios | INFO | query_agent:213 | ✅ Query completed successfully in 9.53s
+2025-10-25 22:28:29 | helios | INFO | shutdown_event:321 | 🛑 Helios V2 API server shutting down
+2025-10-25 22:28:30 | helios | INFO | <module>:41 | 🚀 Starting Helios V2 initialization...
+2025-10-25 22:28:30 | helios | INFO | <module>:42 | Environment: development
+2025-10-25 22:28:30 | helios | INFO | <module>:49 | ✅ OpenAI API key loaded from environment
+2025-10-25 22:28:30 | helios | INFO | <module>:53 | ✅ LangSmith tracing enabled
+2025-10-25 22:28:30 | helios | INFO | <module>:62 | ✅ Loaded unified materials database: 72 materials
+2025-10-25 22:28:30 | helios | INFO | <module>:72 | Loading embedding model...
+2025-10-25 22:28:35 | helios | INFO | <module>:74 | ✅ Embedding model loaded
+2025-10-25 22:28:35 | helios | INFO | <module>:76 | Loading vector store from db/...
+2025-10-25 22:28:35 | helios | INFO | <module>:78 | ✅ Vector store loaded
+2025-10-25 22:28:35 | helios | INFO | <module>:80 | Initializing LLM...
+2025-10-25 22:28:36 | helios | INFO | <module>:82 | ✅ LLM initialized
+2025-10-25 22:28:36 | helios | INFO | <module>:90 | Setting up self-query retriever...
+2025-10-25 22:28:36 | helios | INFO | <module>:113 | ✅ Self-query retriever configured
+2025-10-25 22:28:36 | helios | INFO | <module>:121 | Building RAG chain...
+2025-10-25 22:28:36 | helios | INFO | <module>:139 | ✅ RAG chain built successfully
+2025-10-25 22:28:36 | helios | INFO | <module>:145 | 🎉 Helios V2 Core Logic Initialized. The Agent is online and ready.
+2025-10-25 22:28:36 | helios | INFO | startup_event:314 | 🌟 Helios V2 API server started successfully
+2025-10-25 22:28:36 | helios | INFO | startup_event:315 | 📊 72 materials loaded and ready
+2025-10-25 22:28:36 | helios | INFO | startup_event:316 | 🔧 Environment: development
+2025-10-25 22:28:37 | helios | INFO | <module>:41 | 🚀 Starting Helios V2 initialization...
+2025-10-25 22:28:37 | helios | INFO | <module>:42 | Environment: development
+2025-10-25 22:28:37 | helios | INFO | <module>:49 | ✅ OpenAI API key loaded from environment
+2025-10-25 22:28:37 | helios | INFO | <module>:53 | ✅ LangSmith tracing enabled
+2025-10-25 22:28:37 | helios | INFO | <module>:62 | ✅ Loaded unified materials database: 72 materials
+2025-10-25 22:28:37 | helios | INFO | <module>:72 | Loading embedding model...
+2025-10-25 22:28:41 | helios | INFO | <module>:74 | ✅ Embedding model loaded
+2025-10-25 22:28:41 | helios | INFO | <module>:76 | Loading vector store from db/...
+2025-10-25 22:28:41 | helios | INFO | <module>:78 | ✅ Vector store loaded
+2025-10-25 22:28:41 | helios | INFO | <module>:80 | Initializing LLM...
+2025-10-25 22:28:41 | helios | INFO | <module>:82 | ✅ LLM initialized
+2025-10-25 22:28:41 | helios | INFO | <module>:90 | Setting up self-query retriever...
+2025-10-25 22:28:41 | helios | INFO | <module>:113 | ✅ Self-query retriever configured
+2025-10-25 22:28:41 | helios | INFO | <module>:121 | Building RAG chain...
+2025-10-25 22:28:41 | helios | INFO | <module>:139 | ✅ RAG chain built successfully
+2025-10-25 22:28:41 | helios | INFO | <module>:145 | 🎉 Helios V2 Core Logic Initialized. The Agent is online and ready.
+2025-10-25 22:28:41 | helios | INFO | startup_event:314 | 🌟 Helios V2 API server started successfully
+2025-10-25 22:28:41 | helios | INFO | startup_event:315 | 📊 72 materials loaded and ready
+2025-10-25 22:28:41 | helios | INFO | startup_event:316 | 🔧 Environment: development
+2025-10-25 22:28:42 | helios | INFO | <module>:41 | 🚀 Starting Helios V2 initialization...
+2025-10-25 22:28:42 | helios | INFO | <module>:42 | Environment: development
+2025-10-25 22:28:42 | helios | INFO | <module>:49 | ✅ OpenAI API key loaded from environment
+2025-10-25 22:28:42 | helios | INFO | <module>:53 | ✅ LangSmith tracing enabled
+2025-10-25 22:28:42 | helios | INFO | <module>:62 | ✅ Loaded unified materials database: 72 materials
+2025-10-25 22:28:42 | helios | INFO | <module>:72 | Loading embedding model...
+2025-10-25 22:28:46 | helios | INFO | <module>:74 | ✅ Embedding model loaded
+2025-10-25 22:28:46 | helios | INFO | <module>:76 | Loading vector store from db/...
+2025-10-25 22:28:46 | helios | INFO | <module>:78 | ✅ Vector store loaded
+2025-10-25 22:28:46 | helios | INFO | <module>:80 | Initializing LLM...
+2025-10-25 22:28:46 | helios | INFO | <module>:82 | ✅ LLM initialized
+2025-10-25 22:28:46 | helios | INFO | <module>:90 | Setting up self-query retriever...
+2025-10-25 22:28:47 | helios | INFO | <module>:113 | ✅ Self-query retriever configured
+2025-10-25 22:28:47 | helios | INFO | <module>:121 | Building RAG chain...
+2025-10-25 22:28:47 | helios | INFO | <module>:139 | ✅ RAG chain built successfully
+2025-10-25 22:28:47 | helios | INFO | <module>:145 | 🎉 Helios V2 Core Logic Initialized. The Agent is online and ready.
+2025-10-25 22:28:47 | helios | INFO | startup_event:314 | 🌟 Helios V2 API server started successfully
+2025-10-25 22:28:47 | helios | INFO | startup_event:315 | 📊 72 materials loaded and ready
+2025-10-25 22:28:47 | helios | INFO | startup_event:316 | 🔧 Environment: development
+2025-10-25 22:28:54 | helios | INFO | shutdown_event:321 | 🛑 Helios V2 API server shutting down
+2025-10-25 22:28:55 | helios | INFO | <module>:41 | 🚀 Starting Helios V2 initialization...
+2025-10-25 22:28:55 | helios | INFO | <module>:42 | Environment: development
+2025-10-25 22:28:55 | helios | INFO | <module>:49 | ✅ OpenAI API key loaded from environment
+2025-10-25 22:28:55 | helios | INFO | <module>:53 | ✅ LangSmith tracing enabled
+2025-10-25 22:28:55 | helios | INFO | <module>:62 | ✅ Loaded unified materials database: 72 materials
+2025-10-25 22:28:55 | helios | INFO | <module>:72 | Loading embedding model...
+2025-10-25 22:28:59 | helios | INFO | <module>:74 | ✅ Embedding model loaded
+2025-10-25 22:28:59 | helios | INFO | <module>:76 | Loading vector store from db/...
+2025-10-25 22:28:59 | helios | INFO | <module>:78 | ✅ Vector store loaded
+2025-10-25 22:28:59 | helios | INFO | <module>:80 | Initializing LLM...
+2025-10-25 22:29:00 | helios | INFO | <module>:82 | ✅ LLM initialized
+2025-10-25 22:29:00 | helios | INFO | <module>:90 | Setting up self-query retriever...
+2025-10-25 22:29:00 | helios | INFO | <module>:113 | ✅ Self-query retriever configured
+2025-10-25 22:29:00 | helios | INFO | <module>:121 | Building RAG chain...
+2025-10-25 22:29:00 | helios | INFO | <module>:139 | ✅ RAG chain built successfully
+2025-10-25 22:29:00 | helios | INFO | <module>:145 | 🎉 Helios V2 Core Logic Initialized. The Agent is online and ready.
+2025-10-25 22:29:00 | helios | INFO | startup_event:314 | 🌟 Helios V2 API server started successfully
+2025-10-25 22:29:00 | helios | INFO | startup_event:315 | 📊 72 materials loaded and ready
+2025-10-25 22:29:00 | helios | INFO | startup_event:316 | 🔧 Environment: development
+2025-10-25 22:29:01 | helios | INFO | <module>:41 | 🚀 Starting Helios V2 initialization...
+2025-10-25 22:29:01 | helios | INFO | <module>:42 | Environment: development
+2025-10-25 22:29:01 | helios | INFO | <module>:49 | ✅ OpenAI API key loaded from environment
+2025-10-25 22:29:01 | helios | INFO | <module>:53 | ✅ LangSmith tracing enabled
+2025-10-25 22:29:01 | helios | INFO | <module>:62 | ✅ Loaded unified materials database: 72 materials
+2025-10-25 22:29:01 | helios | INFO | <module>:72 | Loading embedding model...
+2025-10-25 22:29:04 | helios | INFO | <module>:74 | ✅ Embedding model loaded
+2025-10-25 22:29:04 | helios | INFO | <module>:76 | Loading vector store from db/...
+2025-10-25 22:29:05 | helios | INFO | <module>:78 | ✅ Vector store loaded
+2025-10-25 22:29:05 | helios | INFO | <module>:80 | Initializing LLM...
+2025-10-25 22:29:05 | helios | INFO | <module>:82 | ✅ LLM initialized
+2025-10-25 22:29:05 | helios | INFO | <module>:90 | Setting up self-query retriever...
+2025-10-25 22:29:05 | helios | INFO | <module>:113 | ✅ Self-query retriever configured
+2025-10-25 22:29:05 | helios | INFO | <module>:121 | Building RAG chain...
+2025-10-25 22:29:05 | helios | INFO | <module>:139 | ✅ RAG chain built successfully
+2025-10-25 22:29:05 | helios | INFO | <module>:145 | 🎉 Helios V2 Core Logic Initialized. The Agent is online and ready.
+2025-10-25 22:29:05 | helios | INFO | startup_event:314 | 🌟 Helios V2 API server started successfully
+2025-10-25 22:29:05 | helios | INFO | startup_event:315 | 📊 72 materials loaded and ready
+2025-10-25 22:29:05 | helios | INFO | startup_event:316 | 🔧 Environment: development
+2025-10-25 22:33:03 | helios | INFO | shutdown_event:321 | 🛑 Helios V2 API server shutting down
+2025-10-25 22:35:29 | helios | INFO | <module>:41 | 🚀 Starting Helios V2 (Hybrid Retrieval) initialization...
+2025-10-25 22:35:29 | helios | INFO | <module>:42 | Environment: development
+2025-10-25 22:35:29 | helios | INFO | <module>:48 | ✅ OpenAI API key loaded from environment
+2025-10-25 22:35:29 | helios | INFO | <module>:51 | ✅ LangSmith tracing enabled
+2025-10-25 22:35:29 | helios | INFO | <module>:58 | ✅ Loaded unified materials database: 72 materials
+2025-10-25 22:35:29 | helios | INFO | <module>:65 | Loading embedding model...
+2025-10-25 22:35:34 | helios | INFO | <module>:67 | ✅ Embedding model loaded
+2025-10-25 22:35:34 | helios | INFO | <module>:69 | Loading vector store from db/...
+2025-10-25 22:35:35 | helios | INFO | <module>:71 | ✅ Vector store loaded
+2025-10-25 22:35:35 | helios | INFO | <module>:73 | Initializing LLM...
+2025-10-25 22:35:35 | helios | INFO | <module>:75 | ✅ LLM initialized
+2025-10-25 22:35:35 | helios | INFO | <module>:83 | 🔧 Setting up Hybrid Retrieval System...
+2025-10-25 22:35:35 | helios | INFO | <module>:86 |    Loading documents for BM25 indexing...
+2025-10-25 22:35:35 | helios | INFO | <module>:88 |    ✓ Loaded 72 documents
+2025-10-25 22:35:35 | helios | INFO | __init__:42 | 🔧 Initializing Hybrid Retriever...
+2025-10-25 22:35:35 | helios | INFO | __init__:44 | ✅ Hybrid Retriever ready
+2025-10-25 22:35:35 | helios | INFO | <module>:92 | ✅ Hybrid Retrieval System ready
+2025-10-25 22:35:35 | helios | INFO | <module>:100 | Building RAG chain with hybrid retrieval...
+2025-10-25 22:35:35 | helios | INFO | <module>:118 | ✅ RAG chain built successfully
+2025-10-25 22:35:35 | helios | INFO | <module>:124 | 🎉 Helios V2 (Hybrid) Initialized. The Agent is online and ready.
+2025-10-25 22:35:35 | helios | INFO | startup_event:316 | 🌟 Helios V2 (Hybrid Retrieval) API server started
+2025-10-25 22:35:35 | helios | INFO | startup_event:317 | 📊 72 materials loaded
+2025-10-25 22:35:35 | helios | INFO | startup_event:318 | 🔧 Hybrid retrieval active (semantic + BM25)
+2025-10-25 22:35:49 | helios | INFO | compare_retrieval_methods:219 | 📊 Comparison request for: 'lightweight metal'
+2025-10-25 22:35:49 | helios | INFO | compare_methods:116 | 📊 Comparing retrieval methods for: 'lightweight metal'
+2025-10-25 22:35:50 | helios | INFO | compare_methods:129 |   Semantic: ['Tool Steel D2', 'Lead', 'Bronze (Phosphor Bronze)', 'Carbon Steel 4140', 'Magnesium AZ31B']
+2025-10-25 22:35:50 | helios | INFO | compare_methods:130 |   Keyword:  ['Carbon Fiber Composite (Epoxy)', 'Tantalum', 'Niobium', 'Molybdenum', 'Platinum']
+2025-10-25 22:35:50 | helios | INFO | compare_methods:131 |   Hybrid:   ['Tool Steel D2', 'Lead', 'Bronze (Phosphor Bronze)', 'Carbon Steel 4140', 'Magnesium AZ31B']
+2025-10-26 00:54:59 | helios | INFO | shutdown_event:322 | 🛑 Helios V2 shutting down
+2025-10-26 12:56:36 | helios | INFO | <module>:41 | 🚀 Starting Helios V2 (Hybrid Retrieval) initialization...
+2025-10-26 12:56:36 | helios | INFO | <module>:42 | Environment: development
+2025-10-26 12:56:36 | helios | INFO | <module>:48 | ✅ OpenAI API key loaded from environment
+2025-10-26 12:56:36 | helios | INFO | <module>:51 | ✅ LangSmith tracing enabled
+2025-10-26 12:56:36 | helios | INFO | <module>:58 | ✅ Loaded unified materials database: 72 materials
+2025-10-26 12:56:36 | helios | INFO | <module>:65 | Loading embedding model...
+2025-10-26 12:56:41 | helios | INFO | <module>:67 | ✅ Embedding model loaded
+2025-10-26 12:56:41 | helios | INFO | <module>:69 | Loading vector store from db/...
+2025-10-26 12:56:42 | helios | INFO | <module>:71 | ✅ Vector store loaded
+2025-10-26 12:56:42 | helios | INFO | <module>:73 | Initializing LLM...
+2025-10-26 12:56:42 | helios | INFO | <module>:75 | ✅ LLM initialized
+2025-10-26 12:56:42 | helios | INFO | <module>:83 | 🔧 Setting up Hybrid Retrieval System...
+2025-10-26 12:56:42 | helios | INFO | <module>:86 |    Loading documents for BM25 indexing...
+2025-10-26 12:56:42 | helios | INFO | <module>:88 |    ✓ Loaded 72 documents
+2025-10-26 12:56:42 | helios | INFO | __init__:42 | 🔧 Initializing Hybrid Retriever...
+2025-10-26 12:56:42 | helios | INFO | __init__:44 | ✅ Hybrid Retriever ready
+2025-10-26 12:56:42 | helios | INFO | <module>:92 | ✅ Hybrid Retrieval System ready
+2025-10-26 12:56:42 | helios | INFO | <module>:100 | Building RAG chain with hybrid retrieval...
+2025-10-26 12:56:42 | helios | INFO | <module>:118 | ✅ RAG chain built successfully
+2025-10-26 12:56:42 | helios | INFO | <module>:124 | 🎉 Helios V2 (Hybrid) Initialized. The Agent is online and ready.
+2025-10-26 12:56:42 | helios | INFO | startup_event:316 | 🌟 Helios V2 (Hybrid Retrieval) API server started
+2025-10-26 12:56:42 | helios | INFO | startup_event:317 | 📊 72 materials loaded
+2025-10-26 12:56:42 | helios | INFO | startup_event:318 | 🔧 Hybrid retrieval active (semantic + BM25)
+2025-10-26 12:59:53 | helios | INFO | query_agent:145 | 📥 New query: 'i want to make a bulb, what materials should i use...' [Method: Hybrid]
+2025-10-26 12:59:59 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 5.62s | Sources: 5 | Query: 'i want to make a bulb, what materials should i use...'
+2025-10-26 12:59:59 | helios | INFO | query_agent:193 | ✅ Query completed in 5.62s using hybrid
+2025-10-26 14:08:59 | helios | INFO | shutdown_event:322 | 🛑 Helios V2 shutting down
+2025-10-26 19:07:56 | helios | INFO | <module>:41 | 🚀 Starting Helios V2 (Hybrid Retrieval) initialization...
+2025-10-26 19:07:56 | helios | INFO | <module>:42 | Environment: development
+2025-10-26 19:07:56 | helios | INFO | <module>:48 | ✅ OpenAI API key loaded from environment
+2025-10-26 19:07:56 | helios | INFO | <module>:51 | ✅ LangSmith tracing enabled
+2025-10-26 19:07:56 | helios | INFO | <module>:58 | ✅ Loaded unified materials database: 72 materials
+2025-10-26 19:07:56 | helios | INFO | <module>:65 | Loading embedding model...
+2025-10-26 19:08:01 | helios | INFO | <module>:67 | ✅ Embedding model loaded
+2025-10-26 19:08:01 | helios | INFO | <module>:69 | Loading vector store from db/...
+2025-10-26 19:08:01 | helios | INFO | <module>:71 | ✅ Vector store loaded
+2025-10-26 19:08:01 | helios | INFO | <module>:73 | Initializing LLM...
+2025-10-26 19:08:01 | helios | INFO | <module>:75 | ✅ LLM initialized
+2025-10-26 19:08:01 | helios | INFO | <module>:83 | 🔧 Setting up Hybrid Retrieval System...
+2025-10-26 19:08:01 | helios | INFO | <module>:86 |    Loading documents for BM25 indexing...
+2025-10-26 19:08:01 | helios | INFO | <module>:88 |    ✓ Loaded 72 documents
+2025-10-26 19:08:01 | helios | INFO | __init__:42 | 🔧 Initializing Hybrid Retriever...
+2025-10-26 19:08:01 | helios | INFO | __init__:44 | ✅ Hybrid Retriever ready
+2025-10-26 19:08:01 | helios | INFO | <module>:92 | ✅ Hybrid Retrieval System ready
+2025-10-26 19:08:01 | helios | INFO | <module>:100 | Building RAG chain with hybrid retrieval...
+2025-10-26 19:08:01 | helios | INFO | <module>:118 | ✅ RAG chain built successfully
+2025-10-26 19:08:01 | helios | INFO | <module>:124 | 🎉 Helios V2 (Hybrid) Initialized. The Agent is online and ready.
+2025-10-26 19:08:01 | helios | INFO | startup_event:316 | 🌟 Helios V2 (Hybrid Retrieval) API server started
+2025-10-26 19:08:01 | helios | INFO | startup_event:317 | 📊 72 materials loaded
+2025-10-26 19:08:01 | helios | INFO | startup_event:318 | 🔧 Hybrid retrieval active (semantic + BM25)
+2025-10-26 19:08:53 | helios | INFO | query_agent:145 | 📥 New query: 'materials with yield strength over 800 MPa...' [Method: Hybrid]
+2025-10-26 19:08:54 | helios | ERROR | query_agent:204 | ❌ Query failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************UJgA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+Traceback (most recent call last):
+  File "/Users/sam/Desktop/hELIOS/main.py", line 165, in query_agent
+    answer_result = question_answer_chain.invoke({
+        "input": query_text,
+        "context": retrieved_docs,
+        "chat_history": langchain_chat_history
+    })
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/runnables/base.py", line 5441, in invoke
+    return self.bound.invoke(
+           ~~~~~~~~~~~~~~~~~^
+        input,
+        ^^^^^^
+        self._merge_configs(config),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        **{**self.kwargs, **kwargs},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/runnables/base.py", line 3049, in invoke
+    input_ = context.run(step.invoke, input_, config)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 383, in invoke
+    self.generate_prompt(
+    ~~~~~~~~~~~~~~~~~~~~^
+        [self._convert_input(input)],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ).generations[0][0],
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 1006, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 825, in generate
+    self._generate_with_cache(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        m,
+        ^^
+    ...<2 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 1072, in _generate_with_cache
+    result = self._generate(
+        messages, stop=stop, run_manager=run_manager, **kwargs
+    )
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_openai/chat_models/base.py", line 1177, in _generate
+    response = self.client.create(**payload)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_utils/_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/resources/chat/completions/completions.py", line 1150, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/chat/completions",
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<46 lines>...
+        stream_cls=Stream[ChatCompletionChunk],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************UJgA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-26 19:08:54 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: FAILED | Response Time: 0.76s | Sources: 0 | Query: 'materials with yield strength over 800 MPa...'
+2025-10-26 19:08:54 | helios | INFO | query_agent:145 | 📥 New query: 'materials with density less than 2 g/cc...' [Method: Hybrid]
+2025-10-26 19:08:54 | helios | ERROR | query_agent:204 | ❌ Query failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************UJgA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+Traceback (most recent call last):
+  File "/Users/sam/Desktop/hELIOS/main.py", line 165, in query_agent
+    answer_result = question_answer_chain.invoke({
+        "input": query_text,
+        "context": retrieved_docs,
+        "chat_history": langchain_chat_history
+    })
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/runnables/base.py", line 5441, in invoke
+    return self.bound.invoke(
+           ~~~~~~~~~~~~~~~~~^
+        input,
+        ^^^^^^
+        self._merge_configs(config),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        **{**self.kwargs, **kwargs},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/runnables/base.py", line 3049, in invoke
+    input_ = context.run(step.invoke, input_, config)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 383, in invoke
+    self.generate_prompt(
+    ~~~~~~~~~~~~~~~~~~~~^
+        [self._convert_input(input)],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ).generations[0][0],
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 1006, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 825, in generate
+    self._generate_with_cache(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        m,
+        ^^
+    ...<2 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 1072, in _generate_with_cache
+    result = self._generate(
+        messages, stop=stop, run_manager=run_manager, **kwargs
+    )
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_openai/chat_models/base.py", line 1177, in _generate
+    response = self.client.create(**payload)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_utils/_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/resources/chat/completions/completions.py", line 1150, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/chat/completions",
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<46 lines>...
+        stream_cls=Stream[ChatCompletionChunk],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************UJgA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-26 19:08:54 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: FAILED | Response Time: 0.42s | Sources: 0 | Query: 'materials with density less than 2 g/cc...'
+2025-10-26 19:08:54 | helios | INFO | query_agent:145 | 📥 New query: 'materials under $5 per kg...' [Method: Hybrid]
+2025-10-26 19:08:54 | helios | ERROR | query_agent:204 | ❌ Query failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************UJgA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+Traceback (most recent call last):
+  File "/Users/sam/Desktop/hELIOS/main.py", line 165, in query_agent
+    answer_result = question_answer_chain.invoke({
+        "input": query_text,
+        "context": retrieved_docs,
+        "chat_history": langchain_chat_history
+    })
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/runnables/base.py", line 5441, in invoke
+    return self.bound.invoke(
+           ~~~~~~~~~~~~~~~~~^
+        input,
+        ^^^^^^
+        self._merge_configs(config),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        **{**self.kwargs, **kwargs},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/runnables/base.py", line 3049, in invoke
+    input_ = context.run(step.invoke, input_, config)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 383, in invoke
+    self.generate_prompt(
+    ~~~~~~~~~~~~~~~~~~~~^
+        [self._convert_input(input)],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ).generations[0][0],
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 1006, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 825, in generate
+    self._generate_with_cache(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        m,
+        ^^
+    ...<2 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 1072, in _generate_with_cache
+    result = self._generate(
+        messages, stop=stop, run_manager=run_manager, **kwargs
+    )
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_openai/chat_models/base.py", line 1177, in _generate
+    response = self.client.create(**payload)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_utils/_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/resources/chat/completions/completions.py", line 1150, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/chat/completions",
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<46 lines>...
+        stream_cls=Stream[ChatCompletionChunk],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************UJgA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-26 19:08:54 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: FAILED | Response Time: 0.19s | Sources: 0 | Query: 'materials under $5 per kg...'
+2025-10-26 19:08:54 | helios | INFO | query_agent:145 | 📥 New query: 'lightweight corrosion resistant metal...' [Method: Hybrid]
+2025-10-26 19:08:54 | helios | ERROR | query_agent:204 | ❌ Query failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************UJgA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+Traceback (most recent call last):
+  File "/Users/sam/Desktop/hELIOS/main.py", line 165, in query_agent
+    answer_result = question_answer_chain.invoke({
+        "input": query_text,
+        "context": retrieved_docs,
+        "chat_history": langchain_chat_history
+    })
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/runnables/base.py", line 5441, in invoke
+    return self.bound.invoke(
+           ~~~~~~~~~~~~~~~~~^
+        input,
+        ^^^^^^
+        self._merge_configs(config),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        **{**self.kwargs, **kwargs},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/runnables/base.py", line 3049, in invoke
+    input_ = context.run(step.invoke, input_, config)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 383, in invoke
+    self.generate_prompt(
+    ~~~~~~~~~~~~~~~~~~~~^
+        [self._convert_input(input)],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ).generations[0][0],
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 1006, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 825, in generate
+    self._generate_with_cache(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        m,
+        ^^
+    ...<2 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 1072, in _generate_with_cache
+    result = self._generate(
+        messages, stop=stop, run_manager=run_manager, **kwargs
+    )
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_openai/chat_models/base.py", line 1177, in _generate
+    response = self.client.create(**payload)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_utils/_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/resources/chat/completions/completions.py", line 1150, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/chat/completions",
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<46 lines>...
+        stream_cls=Stream[ChatCompletionChunk],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************UJgA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-26 19:08:54 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: FAILED | Response Time: 0.17s | Sources: 0 | Query: 'lightweight corrosion resistant metal...'
+2025-10-26 19:08:54 | helios | INFO | query_agent:145 | 📥 New query: 'high temperature resistant materials...' [Method: Hybrid]
+2025-10-26 19:08:55 | helios | ERROR | query_agent:204 | ❌ Query failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************UJgA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+Traceback (most recent call last):
+  File "/Users/sam/Desktop/hELIOS/main.py", line 165, in query_agent
+    answer_result = question_answer_chain.invoke({
+        "input": query_text,
+        "context": retrieved_docs,
+        "chat_history": langchain_chat_history
+    })
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/runnables/base.py", line 5441, in invoke
+    return self.bound.invoke(
+           ~~~~~~~~~~~~~~~~~^
+        input,
+        ^^^^^^
+        self._merge_configs(config),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        **{**self.kwargs, **kwargs},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/runnables/base.py", line 3049, in invoke
+    input_ = context.run(step.invoke, input_, config)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 383, in invoke
+    self.generate_prompt(
+    ~~~~~~~~~~~~~~~~~~~~^
+        [self._convert_input(input)],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ).generations[0][0],
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 1006, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 825, in generate
+    self._generate_with_cache(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        m,
+        ^^
+    ...<2 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 1072, in _generate_with_cache
+    result = self._generate(
+        messages, stop=stop, run_manager=run_manager, **kwargs
+    )
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_openai/chat_models/base.py", line 1177, in _generate
+    response = self.client.create(**payload)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_utils/_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/resources/chat/completions/completions.py", line 1150, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/chat/completions",
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<46 lines>...
+        stream_cls=Stream[ChatCompletionChunk],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************UJgA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-26 19:08:55 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: FAILED | Response Time: 0.16s | Sources: 0 | Query: 'high temperature resistant materials...'
+2025-10-26 19:08:55 | helios | INFO | query_agent:145 | 📥 New query: 'materials for aerospace applications...' [Method: Hybrid]
+2025-10-26 19:08:55 | helios | ERROR | query_agent:204 | ❌ Query failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************UJgA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+Traceback (most recent call last):
+  File "/Users/sam/Desktop/hELIOS/main.py", line 165, in query_agent
+    answer_result = question_answer_chain.invoke({
+        "input": query_text,
+        "context": retrieved_docs,
+        "chat_history": langchain_chat_history
+    })
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/runnables/base.py", line 5441, in invoke
+    return self.bound.invoke(
+           ~~~~~~~~~~~~~~~~~^
+        input,
+        ^^^^^^
+        self._merge_configs(config),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        **{**self.kwargs, **kwargs},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/runnables/base.py", line 3049, in invoke
+    input_ = context.run(step.invoke, input_, config)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 383, in invoke
+    self.generate_prompt(
+    ~~~~~~~~~~~~~~~~~~~~^
+        [self._convert_input(input)],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ).generations[0][0],
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 1006, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 825, in generate
+    self._generate_with_cache(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        m,
+        ^^
+    ...<2 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 1072, in _generate_with_cache
+    result = self._generate(
+        messages, stop=stop, run_manager=run_manager, **kwargs
+    )
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_openai/chat_models/base.py", line 1177, in _generate
+    response = self.client.create(**payload)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_utils/_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/resources/chat/completions/completions.py", line 1150, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/chat/completions",
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<46 lines>...
+        stream_cls=Stream[ChatCompletionChunk],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************UJgA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-26 19:08:55 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: FAILED | Response Time: 0.08s | Sources: 0 | Query: 'materials for aerospace applications...'
+2025-10-26 19:08:55 | helios | INFO | query_agent:145 | 📥 New query: 'density 2.70 g/cc...' [Method: Hybrid]
+2025-10-26 19:08:55 | helios | ERROR | query_agent:204 | ❌ Query failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************UJgA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+Traceback (most recent call last):
+  File "/Users/sam/Desktop/hELIOS/main.py", line 165, in query_agent
+    answer_result = question_answer_chain.invoke({
+        "input": query_text,
+        "context": retrieved_docs,
+        "chat_history": langchain_chat_history
+    })
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/runnables/base.py", line 5441, in invoke
+    return self.bound.invoke(
+           ~~~~~~~~~~~~~~~~~^
+        input,
+        ^^^^^^
+        self._merge_configs(config),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        **{**self.kwargs, **kwargs},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/runnables/base.py", line 3049, in invoke
+    input_ = context.run(step.invoke, input_, config)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 383, in invoke
+    self.generate_prompt(
+    ~~~~~~~~~~~~~~~~~~~~^
+        [self._convert_input(input)],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ).generations[0][0],
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 1006, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 825, in generate
+    self._generate_with_cache(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        m,
+        ^^
+    ...<2 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 1072, in _generate_with_cache
+    result = self._generate(
+        messages, stop=stop, run_manager=run_manager, **kwargs
+    )
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_openai/chat_models/base.py", line 1177, in _generate
+    response = self.client.create(**payload)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_utils/_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/resources/chat/completions/completions.py", line 1150, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/chat/completions",
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<46 lines>...
+        stream_cls=Stream[ChatCompletionChunk],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************UJgA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-26 19:08:55 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: FAILED | Response Time: 0.14s | Sources: 0 | Query: 'density 2.70 g/cc...'
+2025-10-26 19:08:55 | helios | INFO | query_agent:145 | 📥 New query: 'Aluminum 6061-T6 properties...' [Method: Hybrid]
+2025-10-26 19:08:55 | helios | ERROR | query_agent:204 | ❌ Query failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************UJgA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+Traceback (most recent call last):
+  File "/Users/sam/Desktop/hELIOS/main.py", line 165, in query_agent
+    answer_result = question_answer_chain.invoke({
+        "input": query_text,
+        "context": retrieved_docs,
+        "chat_history": langchain_chat_history
+    })
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/runnables/base.py", line 5441, in invoke
+    return self.bound.invoke(
+           ~~~~~~~~~~~~~~~~~^
+        input,
+        ^^^^^^
+        self._merge_configs(config),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        **{**self.kwargs, **kwargs},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/runnables/base.py", line 3049, in invoke
+    input_ = context.run(step.invoke, input_, config)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 383, in invoke
+    self.generate_prompt(
+    ~~~~~~~~~~~~~~~~~~~~^
+        [self._convert_input(input)],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ).generations[0][0],
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 1006, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 825, in generate
+    self._generate_with_cache(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        m,
+        ^^
+    ...<2 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 1072, in _generate_with_cache
+    result = self._generate(
+        messages, stop=stop, run_manager=run_manager, **kwargs
+    )
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_openai/chat_models/base.py", line 1177, in _generate
+    response = self.client.create(**payload)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_utils/_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/resources/chat/completions/completions.py", line 1150, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/chat/completions",
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<46 lines>...
+        stream_cls=Stream[ChatCompletionChunk],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************UJgA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-26 19:08:55 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: FAILED | Response Time: 0.18s | Sources: 0 | Query: 'Aluminum 6061-T6 properties...'
+2025-10-26 19:08:55 | helios | INFO | query_agent:145 | 📥 New query: 'compare stainless steel 304 and 316...' [Method: Hybrid]
+2025-10-26 19:08:55 | helios | ERROR | query_agent:204 | ❌ Query failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************UJgA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+Traceback (most recent call last):
+  File "/Users/sam/Desktop/hELIOS/main.py", line 165, in query_agent
+    answer_result = question_answer_chain.invoke({
+        "input": query_text,
+        "context": retrieved_docs,
+        "chat_history": langchain_chat_history
+    })
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/runnables/base.py", line 5441, in invoke
+    return self.bound.invoke(
+           ~~~~~~~~~~~~~~~~~^
+        input,
+        ^^^^^^
+        self._merge_configs(config),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        **{**self.kwargs, **kwargs},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/runnables/base.py", line 3049, in invoke
+    input_ = context.run(step.invoke, input_, config)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 383, in invoke
+    self.generate_prompt(
+    ~~~~~~~~~~~~~~~~~~~~^
+        [self._convert_input(input)],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ).generations[0][0],
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 1006, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 825, in generate
+    self._generate_with_cache(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        m,
+        ^^
+    ...<2 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 1072, in _generate_with_cache
+    result = self._generate(
+        messages, stop=stop, run_manager=run_manager, **kwargs
+    )
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_openai/chat_models/base.py", line 1177, in _generate
+    response = self.client.create(**payload)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_utils/_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/resources/chat/completions/completions.py", line 1150, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/chat/completions",
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<46 lines>...
+        stream_cls=Stream[ChatCompletionChunk],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************UJgA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-26 19:08:55 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: FAILED | Response Time: 0.12s | Sources: 0 | Query: 'compare stainless steel 304 and 316...'
+2025-10-26 19:08:55 | helios | INFO | query_agent:145 | 📥 New query: 'titanium vs aluminum for aerospace...' [Method: Hybrid]
+2025-10-26 19:08:55 | helios | ERROR | query_agent:204 | ❌ Query failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************UJgA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+Traceback (most recent call last):
+  File "/Users/sam/Desktop/hELIOS/main.py", line 165, in query_agent
+    answer_result = question_answer_chain.invoke({
+        "input": query_text,
+        "context": retrieved_docs,
+        "chat_history": langchain_chat_history
+    })
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/runnables/base.py", line 5441, in invoke
+    return self.bound.invoke(
+           ~~~~~~~~~~~~~~~~~^
+        input,
+        ^^^^^^
+        self._merge_configs(config),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        **{**self.kwargs, **kwargs},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/runnables/base.py", line 3049, in invoke
+    input_ = context.run(step.invoke, input_, config)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 383, in invoke
+    self.generate_prompt(
+    ~~~~~~~~~~~~~~~~~~~~^
+        [self._convert_input(input)],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ).generations[0][0],
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 1006, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 825, in generate
+    self._generate_with_cache(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        m,
+        ^^
+    ...<2 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 1072, in _generate_with_cache
+    result = self._generate(
+        messages, stop=stop, run_manager=run_manager, **kwargs
+    )
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_openai/chat_models/base.py", line 1177, in _generate
+    response = self.client.create(**payload)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_utils/_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/resources/chat/completions/completions.py", line 1150, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/chat/completions",
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<46 lines>...
+        stream_cls=Stream[ChatCompletionChunk],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************UJgA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-26 19:08:55 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: FAILED | Response Time: 0.13s | Sources: 0 | Query: 'titanium vs aluminum for aerospace...'
+2025-10-26 19:08:55 | helios | INFO | query_agent:145 | 📥 New query: 'most sustainable materials...' [Method: Hybrid]
+2025-10-26 19:08:55 | helios | ERROR | query_agent:204 | ❌ Query failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************UJgA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+Traceback (most recent call last):
+  File "/Users/sam/Desktop/hELIOS/main.py", line 165, in query_agent
+    answer_result = question_answer_chain.invoke({
+        "input": query_text,
+        "context": retrieved_docs,
+        "chat_history": langchain_chat_history
+    })
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/runnables/base.py", line 5441, in invoke
+    return self.bound.invoke(
+           ~~~~~~~~~~~~~~~~~^
+        input,
+        ^^^^^^
+        self._merge_configs(config),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        **{**self.kwargs, **kwargs},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/runnables/base.py", line 3049, in invoke
+    input_ = context.run(step.invoke, input_, config)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 383, in invoke
+    self.generate_prompt(
+    ~~~~~~~~~~~~~~~~~~~~^
+        [self._convert_input(input)],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ).generations[0][0],
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 1006, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 825, in generate
+    self._generate_with_cache(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        m,
+        ^^
+    ...<2 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 1072, in _generate_with_cache
+    result = self._generate(
+        messages, stop=stop, run_manager=run_manager, **kwargs
+    )
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_openai/chat_models/base.py", line 1177, in _generate
+    response = self.client.create(**payload)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_utils/_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/resources/chat/completions/completions.py", line 1150, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/chat/completions",
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<46 lines>...
+        stream_cls=Stream[ChatCompletionChunk],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************UJgA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-26 19:08:55 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: FAILED | Response Time: 0.14s | Sources: 0 | Query: 'most sustainable materials...'
+2025-10-26 19:08:55 | helios | INFO | query_agent:145 | 📥 New query: 'recyclable metals...' [Method: Hybrid]
+2025-10-26 19:08:56 | helios | ERROR | query_agent:204 | ❌ Query failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************UJgA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+Traceback (most recent call last):
+  File "/Users/sam/Desktop/hELIOS/main.py", line 165, in query_agent
+    answer_result = question_answer_chain.invoke({
+        "input": query_text,
+        "context": retrieved_docs,
+        "chat_history": langchain_chat_history
+    })
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/runnables/base.py", line 5441, in invoke
+    return self.bound.invoke(
+           ~~~~~~~~~~~~~~~~~^
+        input,
+        ^^^^^^
+        self._merge_configs(config),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        **{**self.kwargs, **kwargs},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/runnables/base.py", line 3049, in invoke
+    input_ = context.run(step.invoke, input_, config)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 383, in invoke
+    self.generate_prompt(
+    ~~~~~~~~~~~~~~~~~~~~^
+        [self._convert_input(input)],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ).generations[0][0],
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 1006, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 825, in generate
+    self._generate_with_cache(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        m,
+        ^^
+    ...<2 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 1072, in _generate_with_cache
+    result = self._generate(
+        messages, stop=stop, run_manager=run_manager, **kwargs
+    )
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_openai/chat_models/base.py", line 1177, in _generate
+    response = self.client.create(**payload)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_utils/_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/resources/chat/completions/completions.py", line 1150, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/chat/completions",
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<46 lines>...
+        stream_cls=Stream[ChatCompletionChunk],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************UJgA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-26 19:08:56 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: FAILED | Response Time: 0.15s | Sources: 0 | Query: 'recyclable metals...'
+2025-10-26 19:08:56 | helios | INFO | query_agent:145 | 📥 New query: 'show me aluminum alloys...' [Method: Hybrid]
+2025-10-26 19:08:56 | helios | ERROR | query_agent:204 | ❌ Query failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************UJgA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+Traceback (most recent call last):
+  File "/Users/sam/Desktop/hELIOS/main.py", line 165, in query_agent
+    answer_result = question_answer_chain.invoke({
+        "input": query_text,
+        "context": retrieved_docs,
+        "chat_history": langchain_chat_history
+    })
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/runnables/base.py", line 5441, in invoke
+    return self.bound.invoke(
+           ~~~~~~~~~~~~~~~~~^
+        input,
+        ^^^^^^
+        self._merge_configs(config),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        **{**self.kwargs, **kwargs},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/runnables/base.py", line 3049, in invoke
+    input_ = context.run(step.invoke, input_, config)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 383, in invoke
+    self.generate_prompt(
+    ~~~~~~~~~~~~~~~~~~~~^
+        [self._convert_input(input)],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ).generations[0][0],
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 1006, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 825, in generate
+    self._generate_with_cache(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        m,
+        ^^
+    ...<2 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 1072, in _generate_with_cache
+    result = self._generate(
+        messages, stop=stop, run_manager=run_manager, **kwargs
+    )
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_openai/chat_models/base.py", line 1177, in _generate
+    response = self.client.create(**payload)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_utils/_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/resources/chat/completions/completions.py", line 1150, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/chat/completions",
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<46 lines>...
+        stream_cls=Stream[ChatCompletionChunk],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************UJgA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-26 19:08:56 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: FAILED | Response Time: 0.10s | Sources: 0 | Query: 'show me aluminum alloys...'
+2025-10-26 19:08:56 | helios | INFO | query_agent:145 | 📥 New query: 'list ceramics...' [Method: Hybrid]
+2025-10-26 19:08:56 | helios | ERROR | query_agent:204 | ❌ Query failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************UJgA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+Traceback (most recent call last):
+  File "/Users/sam/Desktop/hELIOS/main.py", line 165, in query_agent
+    answer_result = question_answer_chain.invoke({
+        "input": query_text,
+        "context": retrieved_docs,
+        "chat_history": langchain_chat_history
+    })
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/runnables/base.py", line 5441, in invoke
+    return self.bound.invoke(
+           ~~~~~~~~~~~~~~~~~^
+        input,
+        ^^^^^^
+        self._merge_configs(config),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        **{**self.kwargs, **kwargs},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/runnables/base.py", line 3049, in invoke
+    input_ = context.run(step.invoke, input_, config)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 383, in invoke
+    self.generate_prompt(
+    ~~~~~~~~~~~~~~~~~~~~^
+        [self._convert_input(input)],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ).generations[0][0],
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 1006, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 825, in generate
+    self._generate_with_cache(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        m,
+        ^^
+    ...<2 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 1072, in _generate_with_cache
+    result = self._generate(
+        messages, stop=stop, run_manager=run_manager, **kwargs
+    )
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_openai/chat_models/base.py", line 1177, in _generate
+    response = self.client.create(**payload)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_utils/_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/resources/chat/completions/completions.py", line 1150, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/chat/completions",
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<46 lines>...
+        stream_cls=Stream[ChatCompletionChunk],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************UJgA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-26 19:08:56 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: FAILED | Response Time: 0.11s | Sources: 0 | Query: 'list ceramics...'
+2025-10-26 19:08:56 | helios | INFO | query_agent:145 | 📥 New query: 'strong lightweight affordable metal...' [Method: Hybrid]
+2025-10-26 19:08:56 | helios | ERROR | query_agent:204 | ❌ Query failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************UJgA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+Traceback (most recent call last):
+  File "/Users/sam/Desktop/hELIOS/main.py", line 165, in query_agent
+    answer_result = question_answer_chain.invoke({
+        "input": query_text,
+        "context": retrieved_docs,
+        "chat_history": langchain_chat_history
+    })
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/runnables/base.py", line 5441, in invoke
+    return self.bound.invoke(
+           ~~~~~~~~~~~~~~~~~^
+        input,
+        ^^^^^^
+        self._merge_configs(config),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        **{**self.kwargs, **kwargs},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/runnables/base.py", line 3049, in invoke
+    input_ = context.run(step.invoke, input_, config)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 383, in invoke
+    self.generate_prompt(
+    ~~~~~~~~~~~~~~~~~~~~^
+        [self._convert_input(input)],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ).generations[0][0],
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 1006, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 825, in generate
+    self._generate_with_cache(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        m,
+        ^^
+    ...<2 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 1072, in _generate_with_cache
+    result = self._generate(
+        messages, stop=stop, run_manager=run_manager, **kwargs
+    )
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_openai/chat_models/base.py", line 1177, in _generate
+    response = self.client.create(**payload)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_utils/_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/resources/chat/completions/completions.py", line 1150, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/chat/completions",
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<46 lines>...
+        stream_cls=Stream[ChatCompletionChunk],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************UJgA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-26 19:08:56 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: FAILED | Response Time: 0.09s | Sources: 0 | Query: 'strong lightweight affordable metal...'
+2025-10-26 19:13:32 | helios | INFO | shutdown_event:322 | 🛑 Helios V2 shutting down
+2025-10-26 19:13:51 | helios | INFO | <module>:41 | 🚀 Starting Helios V2 (Hybrid Retrieval) initialization...
+2025-10-26 19:13:51 | helios | INFO | <module>:42 | Environment: development
+2025-10-26 19:13:51 | helios | INFO | <module>:48 | ✅ OpenAI API key loaded from environment
+2025-10-26 19:13:51 | helios | INFO | <module>:51 | ✅ LangSmith tracing enabled
+2025-10-26 19:13:51 | helios | INFO | <module>:58 | ✅ Loaded unified materials database: 72 materials
+2025-10-26 19:13:51 | helios | INFO | <module>:65 | Loading embedding model...
+2025-10-26 19:13:56 | helios | INFO | <module>:67 | ✅ Embedding model loaded
+2025-10-26 19:13:56 | helios | INFO | <module>:69 | Loading vector store from db/...
+2025-10-26 19:13:56 | helios | INFO | <module>:71 | ✅ Vector store loaded
+2025-10-26 19:13:56 | helios | INFO | <module>:73 | Initializing LLM...
+2025-10-26 19:13:56 | helios | INFO | <module>:75 | ✅ LLM initialized
+2025-10-26 19:13:56 | helios | INFO | <module>:83 | 🔧 Setting up Hybrid Retrieval System...
+2025-10-26 19:13:56 | helios | INFO | <module>:86 |    Loading documents for BM25 indexing...
+2025-10-26 19:13:56 | helios | INFO | <module>:88 |    ✓ Loaded 72 documents
+2025-10-26 19:13:56 | helios | INFO | __init__:42 | 🔧 Initializing Hybrid Retriever...
+2025-10-26 19:13:56 | helios | INFO | __init__:44 | ✅ Hybrid Retriever ready
+2025-10-26 19:13:56 | helios | INFO | <module>:92 | ✅ Hybrid Retrieval System ready
+2025-10-26 19:13:56 | helios | INFO | <module>:100 | Building RAG chain with hybrid retrieval...
+2025-10-26 19:13:56 | helios | INFO | <module>:118 | ✅ RAG chain built successfully
+2025-10-26 19:13:56 | helios | INFO | <module>:124 | 🎉 Helios V2 (Hybrid) Initialized. The Agent is online and ready.
+2025-10-26 19:13:56 | helios | INFO | startup_event:316 | 🌟 Helios V2 (Hybrid Retrieval) API server started
+2025-10-26 19:13:56 | helios | INFO | startup_event:317 | 📊 72 materials loaded
+2025-10-26 19:13:56 | helios | INFO | startup_event:318 | 🔧 Hybrid retrieval active (semantic + BM25)
+2025-10-26 19:14:44 | helios | INFO | query_agent:145 | 📥 New query: 'what is aluminum?...' [Method: Hybrid]
+2025-10-26 19:14:45 | helios | ERROR | query_agent:204 | ❌ Query failed: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************UJgA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+Traceback (most recent call last):
+  File "/Users/sam/Desktop/hELIOS/main.py", line 165, in query_agent
+    answer_result = question_answer_chain.invoke({
+        "input": query_text,
+        "context": retrieved_docs,
+        "chat_history": langchain_chat_history
+    })
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/runnables/base.py", line 5441, in invoke
+    return self.bound.invoke(
+           ~~~~~~~~~~~~~~~~~^
+        input,
+        ^^^^^^
+        self._merge_configs(config),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        **{**self.kwargs, **kwargs},
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/runnables/base.py", line 3049, in invoke
+    input_ = context.run(step.invoke, input_, config)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 383, in invoke
+    self.generate_prompt(
+    ~~~~~~~~~~~~~~~~~~~~^
+        [self._convert_input(input)],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    ).generations[0][0],
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 1006, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 825, in generate
+    self._generate_with_cache(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        m,
+        ^^
+    ...<2 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_core/language_models/chat_models.py", line 1072, in _generate_with_cache
+    result = self._generate(
+        messages, stop=stop, run_manager=run_manager, **kwargs
+    )
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/langchain_openai/chat_models/base.py", line 1177, in _generate
+    response = self.client.create(**payload)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_utils/_utils.py", line 287, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/resources/chat/completions/completions.py", line 1150, in create
+    return self._post(
+           ~~~~~~~~~~^
+        "/chat/completions",
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<46 lines>...
+        stream_cls=Stream[ChatCompletionChunk],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_base_client.py", line 1259, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/sam/Desktop/hELIOS/venv/lib/python3.13/site-packages/openai/_base_client.py", line 1047, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-********************************************************************************************************************************************************UJgA. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2025-10-26 19:14:45 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: FAILED | Response Time: 0.85s | Sources: 0 | Query: 'what is aluminum?...'
+2025-10-26 19:21:24 | helios | INFO | shutdown_event:322 | 🛑 Helios V2 shutting down
+2025-10-26 19:21:28 | helios | INFO | <module>:41 | 🚀 Starting Helios V2 (Hybrid Retrieval) initialization...
+2025-10-26 19:21:28 | helios | INFO | <module>:42 | Environment: development
+2025-10-26 19:21:28 | helios | INFO | <module>:48 | ✅ OpenAI API key loaded from environment
+2025-10-26 19:21:28 | helios | INFO | <module>:51 | ✅ LangSmith tracing enabled
+2025-10-26 19:21:28 | helios | INFO | <module>:58 | ✅ Loaded unified materials database: 72 materials
+2025-10-26 19:21:28 | helios | INFO | <module>:65 | Loading embedding model...
+2025-10-26 19:21:32 | helios | INFO | <module>:67 | ✅ Embedding model loaded
+2025-10-26 19:21:32 | helios | INFO | <module>:69 | Loading vector store from db/...
+2025-10-26 19:21:33 | helios | INFO | <module>:71 | ✅ Vector store loaded
+2025-10-26 19:21:33 | helios | INFO | <module>:73 | Initializing LLM...
+2025-10-26 19:21:33 | helios | INFO | <module>:75 | ✅ LLM initialized
+2025-10-26 19:21:33 | helios | INFO | <module>:83 | 🔧 Setting up Hybrid Retrieval System...
+2025-10-26 19:21:33 | helios | INFO | <module>:86 |    Loading documents for BM25 indexing...
+2025-10-26 19:21:33 | helios | INFO | <module>:88 |    ✓ Loaded 72 documents
+2025-10-26 19:21:33 | helios | INFO | __init__:42 | 🔧 Initializing Hybrid Retriever...
+2025-10-26 19:21:33 | helios | INFO | __init__:44 | ✅ Hybrid Retriever ready
+2025-10-26 19:21:33 | helios | INFO | <module>:92 | ✅ Hybrid Retrieval System ready
+2025-10-26 19:21:33 | helios | INFO | <module>:100 | Building RAG chain with hybrid retrieval...
+2025-10-26 19:21:33 | helios | INFO | <module>:118 | ✅ RAG chain built successfully
+2025-10-26 19:21:33 | helios | INFO | <module>:124 | 🎉 Helios V2 (Hybrid) Initialized. The Agent is online and ready.
+2025-10-26 19:21:33 | helios | INFO | startup_event:316 | 🌟 Helios V2 (Hybrid Retrieval) API server started
+2025-10-26 19:21:33 | helios | INFO | startup_event:317 | 📊 72 materials loaded
+2025-10-26 19:21:33 | helios | INFO | startup_event:318 | 🔧 Hybrid retrieval active (semantic + BM25)
+2025-10-26 19:21:52 | helios | INFO | query_agent:145 | 📥 New query: 'what is aluminum?...' [Method: Hybrid]
+2025-10-26 19:21:56 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 3.21s | Sources: 5 | Query: 'what is aluminum?...'
+2025-10-26 19:21:56 | helios | INFO | query_agent:193 | ✅ Query completed in 3.21s using hybrid
+2025-10-26 19:22:25 | helios | INFO | query_agent:145 | 📥 New query: 'materials with yield strength over 800 MPa...' [Method: Hybrid]
+2025-10-26 19:22:27 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 1.99s | Sources: 5 | Query: 'materials with yield strength over 800 MPa...'
+2025-10-26 19:22:27 | helios | INFO | query_agent:193 | ✅ Query completed in 1.99s using hybrid
+2025-10-26 19:22:27 | helios | INFO | query_agent:145 | 📥 New query: 'materials with density less than 2 g/cc...' [Method: Hybrid]
+2025-10-26 19:22:29 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 2.00s | Sources: 5 | Query: 'materials with density less than 2 g/cc...'
+2025-10-26 19:22:29 | helios | INFO | query_agent:193 | ✅ Query completed in 2.00s using hybrid
+2025-10-26 19:22:29 | helios | INFO | query_agent:145 | 📥 New query: 'materials under $5 per kg...' [Method: Hybrid]
+2025-10-26 19:22:31 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 1.30s | Sources: 5 | Query: 'materials under $5 per kg...'
+2025-10-26 19:22:31 | helios | INFO | query_agent:193 | ✅ Query completed in 1.30s using hybrid
+2025-10-26 19:22:31 | helios | INFO | query_agent:145 | 📥 New query: 'lightweight corrosion resistant metal...' [Method: Hybrid]
+2025-10-26 19:22:33 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 2.61s | Sources: 5 | Query: 'lightweight corrosion resistant metal...'
+2025-10-26 19:22:33 | helios | INFO | query_agent:193 | ✅ Query completed in 2.61s using hybrid
+2025-10-26 19:22:33 | helios | INFO | query_agent:145 | 📥 New query: 'high temperature resistant materials...' [Method: Hybrid]
+2025-10-26 19:22:36 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 2.98s | Sources: 5 | Query: 'high temperature resistant materials...'
+2025-10-26 19:22:36 | helios | INFO | query_agent:193 | ✅ Query completed in 2.98s using hybrid
+2025-10-26 19:22:36 | helios | INFO | query_agent:145 | 📥 New query: 'materials for aerospace applications...' [Method: Hybrid]
+2025-10-26 19:22:38 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 1.95s | Sources: 5 | Query: 'materials for aerospace applications...'
+2025-10-26 19:22:38 | helios | INFO | query_agent:193 | ✅ Query completed in 1.95s using hybrid
+2025-10-26 19:22:38 | helios | INFO | query_agent:145 | 📥 New query: 'density 2.70 g/cc...' [Method: Hybrid]
+2025-10-26 19:22:40 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 1.53s | Sources: 5 | Query: 'density 2.70 g/cc...'
+2025-10-26 19:22:40 | helios | INFO | query_agent:193 | ✅ Query completed in 1.53s using hybrid
+2025-10-26 19:22:40 | helios | INFO | query_agent:145 | 📥 New query: 'Aluminum 6061-T6 properties...' [Method: Hybrid]
+2025-10-26 19:22:41 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 1.33s | Sources: 5 | Query: 'Aluminum 6061-T6 properties...'
+2025-10-26 19:22:41 | helios | INFO | query_agent:193 | ✅ Query completed in 1.33s using hybrid
+2025-10-26 19:22:41 | helios | INFO | query_agent:145 | 📥 New query: 'compare stainless steel 304 and 316...' [Method: Hybrid]
+2025-10-26 19:22:44 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 3.37s | Sources: 5 | Query: 'compare stainless steel 304 and 316...'
+2025-10-26 19:22:44 | helios | INFO | query_agent:193 | ✅ Query completed in 3.37s using hybrid
+2025-10-26 19:22:44 | helios | INFO | query_agent:145 | 📥 New query: 'titanium vs aluminum for aerospace...' [Method: Hybrid]
+2025-10-26 19:22:50 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 5.52s | Sources: 5 | Query: 'titanium vs aluminum for aerospace...'
+2025-10-26 19:22:50 | helios | INFO | query_agent:193 | ✅ Query completed in 5.52s using hybrid
+2025-10-26 19:22:50 | helios | INFO | query_agent:145 | 📥 New query: 'most sustainable materials...' [Method: Hybrid]
+2025-10-26 19:22:51 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 0.93s | Sources: 5 | Query: 'most sustainable materials...'
+2025-10-26 19:22:51 | helios | INFO | query_agent:193 | ✅ Query completed in 0.93s using hybrid
+2025-10-26 19:22:51 | helios | INFO | query_agent:145 | 📥 New query: 'recyclable metals...' [Method: Hybrid]
+2025-10-26 19:22:52 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 1.20s | Sources: 5 | Query: 'recyclable metals...'
+2025-10-26 19:22:52 | helios | INFO | query_agent:193 | ✅ Query completed in 1.20s using hybrid
+2025-10-26 19:22:52 | helios | INFO | query_agent:145 | 📥 New query: 'show me aluminum alloys...' [Method: Hybrid]
+2025-10-26 19:22:57 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 4.66s | Sources: 5 | Query: 'show me aluminum alloys...'
+2025-10-26 19:22:57 | helios | INFO | query_agent:193 | ✅ Query completed in 4.66s using hybrid
+2025-10-26 19:22:57 | helios | INFO | query_agent:145 | 📥 New query: 'list ceramics...' [Method: Hybrid]
+2025-10-26 19:22:58 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 0.91s | Sources: 5 | Query: 'list ceramics...'
+2025-10-26 19:22:58 | helios | INFO | query_agent:193 | ✅ Query completed in 0.91s using hybrid
+2025-10-26 19:22:58 | helios | INFO | query_agent:145 | 📥 New query: 'strong lightweight affordable metal...' [Method: Hybrid]
+2025-10-26 19:22:59 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 1.80s | Sources: 5 | Query: 'strong lightweight affordable metal...'
+2025-10-26 19:22:59 | helios | INFO | query_agent:193 | ✅ Query completed in 1.80s using hybrid
+2025-10-26 19:23:21 | helios | INFO | query_agent:145 | 📥 New query: 'materials with yield strength over 800 MPa...' [Method: Hybrid]
+2025-10-26 19:23:23 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 1.71s | Sources: 5 | Query: 'materials with yield strength over 800 MPa...'
+2025-10-26 19:23:23 | helios | INFO | query_agent:193 | ✅ Query completed in 1.71s using hybrid
+2025-10-26 19:23:23 | helios | INFO | query_agent:145 | 📥 New query: 'materials with density less than 2 g/cc...' [Method: Hybrid]
+2025-10-26 19:23:25 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 1.73s | Sources: 5 | Query: 'materials with density less than 2 g/cc...'
+2025-10-26 19:23:25 | helios | INFO | query_agent:193 | ✅ Query completed in 1.73s using hybrid
+2025-10-26 19:23:25 | helios | INFO | query_agent:145 | 📥 New query: 'materials under $5 per kg...' [Method: Hybrid]
+2025-10-26 19:23:26 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 0.83s | Sources: 5 | Query: 'materials under $5 per kg...'
+2025-10-26 19:23:26 | helios | INFO | query_agent:193 | ✅ Query completed in 0.83s using hybrid
+2025-10-26 19:23:26 | helios | INFO | query_agent:145 | 📥 New query: 'lightweight corrosion resistant metal...' [Method: Hybrid]
+2025-10-26 19:23:28 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 1.92s | Sources: 5 | Query: 'lightweight corrosion resistant metal...'
+2025-10-26 19:23:28 | helios | INFO | query_agent:193 | ✅ Query completed in 1.92s using hybrid
+2025-10-26 19:23:28 | helios | INFO | query_agent:145 | 📥 New query: 'high temperature resistant materials...' [Method: Hybrid]
+2025-10-26 19:23:30 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 2.24s | Sources: 5 | Query: 'high temperature resistant materials...'
+2025-10-26 19:23:30 | helios | INFO | query_agent:193 | ✅ Query completed in 2.24s using hybrid
+2025-10-26 19:23:30 | helios | INFO | query_agent:145 | 📥 New query: 'materials for aerospace applications...' [Method: Hybrid]
+2025-10-26 19:23:33 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 3.20s | Sources: 5 | Query: 'materials for aerospace applications...'
+2025-10-26 19:23:33 | helios | INFO | query_agent:193 | ✅ Query completed in 3.20s using hybrid
+2025-10-26 19:23:33 | helios | INFO | query_agent:145 | 📥 New query: 'density 2.70 g/cc...' [Method: Hybrid]
+2025-10-26 19:23:34 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 1.09s | Sources: 5 | Query: 'density 2.70 g/cc...'
+2025-10-26 19:23:34 | helios | INFO | query_agent:193 | ✅ Query completed in 1.09s using hybrid
+2025-10-26 19:23:34 | helios | INFO | query_agent:145 | 📥 New query: 'Aluminum 6061-T6 properties...' [Method: Hybrid]
+2025-10-26 19:23:36 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 1.63s | Sources: 5 | Query: 'Aluminum 6061-T6 properties...'
+2025-10-26 19:23:36 | helios | INFO | query_agent:193 | ✅ Query completed in 1.63s using hybrid
+2025-10-26 19:23:36 | helios | INFO | query_agent:145 | 📥 New query: 'compare stainless steel 304 and 316...' [Method: Hybrid]
+2025-10-26 19:23:43 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 7.27s | Sources: 5 | Query: 'compare stainless steel 304 and 316...'
+2025-10-26 19:23:43 | helios | INFO | query_agent:193 | ✅ Query completed in 7.27s using hybrid
+2025-10-26 19:23:43 | helios | INFO | query_agent:145 | 📥 New query: 'titanium vs aluminum for aerospace...' [Method: Hybrid]
+2025-10-26 19:23:47 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 4.19s | Sources: 5 | Query: 'titanium vs aluminum for aerospace...'
+2025-10-26 19:23:47 | helios | INFO | query_agent:193 | ✅ Query completed in 4.19s using hybrid
+2025-10-26 19:23:47 | helios | INFO | query_agent:145 | 📥 New query: 'most sustainable materials...' [Method: Hybrid]
+2025-10-26 19:23:48 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 0.86s | Sources: 5 | Query: 'most sustainable materials...'
+2025-10-26 19:23:48 | helios | INFO | query_agent:193 | ✅ Query completed in 0.86s using hybrid
+2025-10-26 19:23:48 | helios | INFO | query_agent:145 | 📥 New query: 'recyclable metals...' [Method: Hybrid]
+2025-10-26 19:23:50 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 1.69s | Sources: 5 | Query: 'recyclable metals...'
+2025-10-26 19:23:50 | helios | INFO | query_agent:193 | ✅ Query completed in 1.69s using hybrid
+2025-10-26 19:23:50 | helios | INFO | query_agent:145 | 📥 New query: 'show me aluminum alloys...' [Method: Hybrid]
+2025-10-26 19:23:53 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 2.86s | Sources: 5 | Query: 'show me aluminum alloys...'
+2025-10-26 19:23:53 | helios | INFO | query_agent:193 | ✅ Query completed in 2.86s using hybrid
+2025-10-26 19:23:53 | helios | INFO | query_agent:145 | 📥 New query: 'list ceramics...' [Method: Hybrid]
+2025-10-26 19:23:54 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 0.80s | Sources: 5 | Query: 'list ceramics...'
+2025-10-26 19:23:54 | helios | INFO | query_agent:193 | ✅ Query completed in 0.80s using hybrid
+2025-10-26 19:23:54 | helios | INFO | query_agent:145 | 📥 New query: 'strong lightweight affordable metal...' [Method: Hybrid]
+2025-10-26 19:23:56 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 2.44s | Sources: 5 | Query: 'strong lightweight affordable metal...'
+2025-10-26 19:23:56 | helios | INFO | query_agent:193 | ✅ Query completed in 2.44s using hybrid
+2025-10-26 19:23:56 | helios | INFO | query_agent:145 | 📥 New query: 'materials with yield strength over 800 MPa...' [Method: Semantic-only]
+2025-10-26 19:23:57 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 1.01s | Sources: 5 | Query: 'materials with yield strength over 800 MPa...'
+2025-10-26 19:23:57 | helios | INFO | query_agent:193 | ✅ Query completed in 1.01s using semantic_only
+2025-10-26 19:23:57 | helios | INFO | query_agent:145 | 📥 New query: 'materials with density less than 2 g/cc...' [Method: Semantic-only]
+2025-10-26 19:23:58 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 0.82s | Sources: 5 | Query: 'materials with density less than 2 g/cc...'
+2025-10-26 19:23:58 | helios | INFO | query_agent:193 | ✅ Query completed in 0.82s using semantic_only
+2025-10-26 19:23:58 | helios | INFO | query_agent:145 | 📥 New query: 'materials under $5 per kg...' [Method: Semantic-only]
+2025-10-26 19:23:59 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 1.08s | Sources: 5 | Query: 'materials under $5 per kg...'
+2025-10-26 19:23:59 | helios | INFO | query_agent:193 | ✅ Query completed in 1.08s using semantic_only
+2025-10-26 19:23:59 | helios | INFO | query_agent:145 | 📥 New query: 'lightweight corrosion resistant metal...' [Method: Semantic-only]
+2025-10-26 19:24:02 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 2.62s | Sources: 5 | Query: 'lightweight corrosion resistant metal...'
+2025-10-26 19:24:02 | helios | INFO | query_agent:193 | ✅ Query completed in 2.62s using semantic_only
+2025-10-26 19:24:02 | helios | INFO | query_agent:145 | 📥 New query: 'high temperature resistant materials...' [Method: Semantic-only]
+2025-10-26 19:24:04 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 2.59s | Sources: 5 | Query: 'high temperature resistant materials...'
+2025-10-26 19:24:04 | helios | INFO | query_agent:193 | ✅ Query completed in 2.59s using semantic_only
+2025-10-26 19:24:04 | helios | INFO | query_agent:145 | 📥 New query: 'materials for aerospace applications...' [Method: Semantic-only]
+2025-10-26 19:24:05 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 1.18s | Sources: 5 | Query: 'materials for aerospace applications...'
+2025-10-26 19:24:05 | helios | INFO | query_agent:193 | ✅ Query completed in 1.18s using semantic_only
+2025-10-26 19:24:05 | helios | INFO | query_agent:145 | 📥 New query: 'density 2.70 g/cc...' [Method: Semantic-only]
+2025-10-26 19:24:06 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 0.77s | Sources: 5 | Query: 'density 2.70 g/cc...'
+2025-10-26 19:24:06 | helios | INFO | query_agent:193 | ✅ Query completed in 0.77s using semantic_only
+2025-10-26 19:24:06 | helios | INFO | query_agent:145 | 📥 New query: 'Aluminum 6061-T6 properties...' [Method: Semantic-only]
+2025-10-26 19:24:07 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 1.26s | Sources: 5 | Query: 'Aluminum 6061-T6 properties...'
+2025-10-26 19:24:07 | helios | INFO | query_agent:193 | ✅ Query completed in 1.26s using semantic_only
+2025-10-26 19:24:07 | helios | INFO | query_agent:145 | 📥 New query: 'compare stainless steel 304 and 316...' [Method: Semantic-only]
+2025-10-26 19:24:11 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 3.37s | Sources: 5 | Query: 'compare stainless steel 304 and 316...'
+2025-10-26 19:24:11 | helios | INFO | query_agent:193 | ✅ Query completed in 3.37s using semantic_only
+2025-10-26 19:24:11 | helios | INFO | query_agent:145 | 📥 New query: 'titanium vs aluminum for aerospace...' [Method: Semantic-only]
+2025-10-26 19:24:17 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 6.69s | Sources: 5 | Query: 'titanium vs aluminum for aerospace...'
+2025-10-26 19:24:17 | helios | INFO | query_agent:193 | ✅ Query completed in 6.69s using semantic_only
+2025-10-26 19:24:17 | helios | INFO | query_agent:145 | 📥 New query: 'most sustainable materials...' [Method: Semantic-only]
+2025-10-26 19:24:18 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 0.48s | Sources: 5 | Query: 'most sustainable materials...'
+2025-10-26 19:24:18 | helios | INFO | query_agent:193 | ✅ Query completed in 0.48s using semantic_only
+2025-10-26 19:24:18 | helios | INFO | query_agent:145 | 📥 New query: 'recyclable metals...' [Method: Semantic-only]
+2025-10-26 19:24:20 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 2.09s | Sources: 5 | Query: 'recyclable metals...'
+2025-10-26 19:24:20 | helios | INFO | query_agent:193 | ✅ Query completed in 2.09s using semantic_only
+2025-10-26 19:24:20 | helios | INFO | query_agent:145 | 📥 New query: 'show me aluminum alloys...' [Method: Semantic-only]
+2025-10-26 19:24:23 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 2.62s | Sources: 5 | Query: 'show me aluminum alloys...'
+2025-10-26 19:24:23 | helios | INFO | query_agent:193 | ✅ Query completed in 2.62s using semantic_only
+2025-10-26 19:24:23 | helios | INFO | query_agent:145 | 📥 New query: 'list ceramics...' [Method: Semantic-only]
+2025-10-26 19:24:24 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 0.92s | Sources: 5 | Query: 'list ceramics...'
+2025-10-26 19:24:24 | helios | INFO | query_agent:193 | ✅ Query completed in 0.92s using semantic_only
+2025-10-26 19:24:24 | helios | INFO | query_agent:145 | 📥 New query: 'strong lightweight affordable metal...' [Method: Semantic-only]
+2025-10-26 19:24:26 | helios | INFO | log_query_metrics:75 | Query Metrics | Status: SUCCESS | Response Time: 2.01s | Sources: 5 | Query: 'strong lightweight affordable metal...'
+2025-10-26 19:24:26 | helios | INFO | query_agent:193 | ✅ Query completed in 2.01s using semantic_only
+2025-10-26 19:32:49 | helios | INFO | compare_retrieval_methods:219 | 📊 Comparison request for: 'Aluminum 6061-T6'
+2025-10-26 19:32:49 | helios | INFO | compare_methods:116 | 📊 Comparing retrieval methods for: 'Aluminum 6061-T6'
+2025-10-26 19:32:49 | helios | INFO | compare_methods:129 |   Semantic: ['Aluminum 6061-T6', 'Aluminum 7075-T6', 'Aluminum 2024-T3']
+2025-10-26 19:32:49 | helios | INFO | compare_methods:130 |   Keyword:  ['Aluminum 6061-T6', 'Aluminum 5052-H32', 'Aluminum 2024-T3']
+2025-10-26 19:32:49 | helios | INFO | compare_methods:131 |   Hybrid:   ['Aluminum 6061-T6', 'Aluminum 7075-T6', 'Aluminum 2024-T3']
+2025-10-26 19:38:17 | helios | INFO | shutdown_event:322 | 🛑 Helios V2 shutting down

@@ -4,3 +4,69 @@
 2025-10-24T23:48:50.506040,SUCCESS,2.279,4,Show me titanium alloys
 2025-10-24T23:49:06.166261,SUCCESS,2.626,4,What ceramics are in your database?
 2025-10-24T23:49:28.349148,SUCCESS,2.490,4,Find materials with density less than 2 g/cc
+2025-10-25T19:10:31.005684,SUCCESS,6.912,4,tell me about aluminium
+2025-10-25T19:19:31.563050,SUCCESS,2.741,4,what is peek material?
+2025-10-25T22:22:11.709685,SUCCESS,9.532,4,what is the peek material
+2025-10-26T12:59:59.033093,SUCCESS,5.623,5,i want to make a bulb, what materials should i use
+2025-10-26T19:08:54.129480,FAILED,0.762,0,materials with yield strength over 800 MPa
+2025-10-26T19:08:54.559915,FAILED,0.416,0,materials with density less than 2 g/cc
+2025-10-26T19:08:54.761704,FAILED,0.195,0,materials under $5 per kg
+2025-10-26T19:08:54.936876,FAILED,0.168,0,lightweight corrosion resistant metal
+2025-10-26T19:08:55.109276,FAILED,0.164,0,high temperature resistant materials
+2025-10-26T19:08:55.200214,FAILED,0.083,0,materials for aerospace applications
+2025-10-26T19:08:55.347587,FAILED,0.141,0,density 2.70 g/cc
+2025-10-26T19:08:55.531503,FAILED,0.177,0,Aluminum 6061-T6 properties
+2025-10-26T19:08:55.656828,FAILED,0.118,0,compare stainless steel 304 and 316
+2025-10-26T19:08:55.790269,FAILED,0.127,0,titanium vs aluminum for aerospace
+2025-10-26T19:08:55.932678,FAILED,0.137,0,most sustainable materials
+2025-10-26T19:08:56.085849,FAILED,0.147,0,recyclable metals
+2025-10-26T19:08:56.192788,FAILED,0.100,0,show me aluminum alloys
+2025-10-26T19:08:56.306462,FAILED,0.108,0,list ceramics
+2025-10-26T19:08:56.403403,FAILED,0.091,0,strong lightweight affordable metal
+2025-10-26T19:14:45.139215,FAILED,0.853,0,what is aluminum?
+2025-10-26T19:21:56.109326,SUCCESS,3.214,5,what is aluminum?
+2025-10-26T19:22:27.719969,SUCCESS,1.993,5,materials with yield strength over 800 MPa
+2025-10-26T19:22:29.734380,SUCCESS,1.995,5,materials with density less than 2 g/cc
+2025-10-26T19:22:31.036188,SUCCESS,1.296,5,materials under $5 per kg
+2025-10-26T19:22:33.651794,SUCCESS,2.610,5,lightweight corrosion resistant metal
+2025-10-26T19:22:36.637552,SUCCESS,2.980,5,high temperature resistant materials
+2025-10-26T19:22:38.588984,SUCCESS,1.946,5,materials for aerospace applications
+2025-10-26T19:22:40.121970,SUCCESS,1.527,5,density 2.70 g/cc
+2025-10-26T19:22:41.453909,SUCCESS,1.325,5,Aluminum 6061-T6 properties
+2025-10-26T19:22:44.829249,SUCCESS,3.371,5,compare stainless steel 304 and 316
+2025-10-26T19:22:50.360415,SUCCESS,5.524,5,titanium vs aluminum for aerospace
+2025-10-26T19:22:51.302509,SUCCESS,0.935,5,most sustainable materials
+2025-10-26T19:22:52.512830,SUCCESS,1.204,5,recyclable metals
+2025-10-26T19:22:57.175463,SUCCESS,4.657,5,show me aluminum alloys
+2025-10-26T19:22:58.087468,SUCCESS,0.907,5,list ceramics
+2025-10-26T19:22:59.888125,SUCCESS,1.795,5,strong lightweight affordable metal
+2025-10-26T19:23:23.642398,SUCCESS,1.714,5,materials with yield strength over 800 MPa
+2025-10-26T19:23:25.382848,SUCCESS,1.731,5,materials with density less than 2 g/cc
+2025-10-26T19:23:26.218236,SUCCESS,0.830,5,materials under $5 per kg
+2025-10-26T19:23:28.147628,SUCCESS,1.924,5,lightweight corrosion resistant metal
+2025-10-26T19:23:30.398211,SUCCESS,2.245,5,high temperature resistant materials
+2025-10-26T19:23:33.601253,SUCCESS,3.196,5,materials for aerospace applications
+2025-10-26T19:23:34.701719,SUCCESS,1.094,5,density 2.70 g/cc
+2025-10-26T19:23:36.340724,SUCCESS,1.633,5,Aluminum 6061-T6 properties
+2025-10-26T19:23:43.612765,SUCCESS,7.266,5,compare stainless steel 304 and 316
+2025-10-26T19:23:47.806852,SUCCESS,4.188,5,titanium vs aluminum for aerospace
+2025-10-26T19:23:48.677071,SUCCESS,0.864,5,most sustainable materials
+2025-10-26T19:23:50.370427,SUCCESS,1.687,5,recyclable metals
+2025-10-26T19:23:53.236818,SUCCESS,2.861,5,show me aluminum alloys
+2025-10-26T19:23:54.042057,SUCCESS,0.799,5,list ceramics
+2025-10-26T19:23:56.489584,SUCCESS,2.442,5,strong lightweight affordable metal
+2025-10-26T19:23:57.503173,SUCCESS,1.006,5,materials with yield strength over 800 MPa
+2025-10-26T19:23:58.330472,SUCCESS,0.821,5,materials with density less than 2 g/cc
+2025-10-26T19:23:59.417720,SUCCESS,1.082,5,materials under $5 per kg
+2025-10-26T19:24:02.043113,SUCCESS,2.620,5,lightweight corrosion resistant metal
+2025-10-26T19:24:04.643944,SUCCESS,2.595,5,high temperature resistant materials
+2025-10-26T19:24:05.828519,SUCCESS,1.178,5,materials for aerospace applications
+2025-10-26T19:24:06.606773,SUCCESS,0.772,5,density 2.70 g/cc
+2025-10-26T19:24:07.877279,SUCCESS,1.264,5,Aluminum 6061-T6 properties
+2025-10-26T19:24:11.255230,SUCCESS,3.372,5,compare stainless steel 304 and 316
+2025-10-26T19:24:17.953393,SUCCESS,6.692,5,titanium vs aluminum for aerospace
+2025-10-26T19:24:18.442047,SUCCESS,0.483,5,most sustainable materials
+2025-10-26T19:24:20.541429,SUCCESS,2.093,5,recyclable metals
+2025-10-26T19:24:23.163231,SUCCESS,2.617,5,show me aluminum alloys
+2025-10-26T19:24:24.089658,SUCCESS,0.921,5,list ceramics
+2025-10-26T19:24:26.106168,SUCCESS,2.010,5,strong lightweight affordable metal

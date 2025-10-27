@@ -1,0 +1,416 @@
+{
+  "method": "semantic",
+  "summary": {
+    "total_tests": 15,
+    "passed": 5,
+    "pass_rate": 0.3333333333333333,
+    "avg_precision": 0.2,
+    "avg_recall": 0.3888888888888889,
+    "avg_response_time": 1.9740426540374756
+  },
+  "category_stats": {
+    "property_filter": {
+      "total": 2,
+      "passed": 0
+    },
+    "cost_filter": {
+      "total": 1,
+      "passed": 0
+    },
+    "semantic": {
+      "total": 2,
+      "passed": 0
+    },
+    "application": {
+      "total": 1,
+      "passed": 0
+    },
+    "exact_match": {
+      "total": 2,
+      "passed": 1
+    },
+    "comparison": {
+      "total": 2,
+      "passed": 2
+    },
+    "sustainability": {
+      "total": 2,
+      "passed": 0
+    },
+    "category_search": {
+      "total": 2,
+      "passed": 2
+    },
+    "multi_constraint": {
+      "total": 1,
+      "passed": 0
+    }
+  },
+  "detailed_results": [
+    {
+      "query": "materials with yield strength over 800 MPa",
+      "category": "property_filter",
+      "success": true,
+      "passed": false,
+      "expected_materials": [
+        "Inconel 718",
+        "Titanium Ti-6Al-4V",
+        "Stainless Steel 17-4 PH",
+        "Tool Steel D2"
+      ],
+      "found_materials": [
+        "Inconel 718"
+      ],
+      "retrieved_materials": [
+        "MatWeb - Brass C360",
+        "MatWeb - PET (Polyethylene Terephthalate)",
+        "MatWeb - Titanium Grade 2 (CP Ti)",
+        "MatWeb - Aluminum 7075-T6",
+        "MatWeb - Inconel 718"
+      ],
+      "precision": 0.2,
+      "recall": 0.25,
+      "response_time": 1.0108888149261475,
+      "retrieval_method": "semantic_only"
+    },
+    {
+      "query": "materials with density less than 2 g/cc",
+      "category": "property_filter",
+      "success": true,
+      "passed": false,
+      "expected_materials": [
+        "Magnesium AZ31B",
+        "PEEK",
+        "Nylon 6/6",
+        "Polypropylene"
+      ],
+      "found_materials": [],
+      "retrieved_materials": [
+        "MatWeb - Lead",
+        "MatWeb - Graphite",
+        "MatWeb - Carbon Fiber Composite (Epoxy)",
+        "MatWeb - Concrete (Structural)",
+        "MatWeb - Molybdenum"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "response_time": 0.8268611431121826,
+      "retrieval_method": "semantic_only"
+    },
+    {
+      "query": "materials under $5 per kg",
+      "category": "cost_filter",
+      "success": true,
+      "passed": false,
+      "expected_materials": [
+        "Carbon Steel 1045",
+        "Aluminum 6061-T6",
+        "Polypropylene"
+      ],
+      "found_materials": [],
+      "retrieved_materials": [
+        "MatWeb - Kevlar (Aramid Fiber)",
+        "MatWeb - PET (Polyethylene Terephthalate)",
+        "MatWeb - Inconel 625",
+        "MatWeb - Brass C360",
+        "MatWeb - Bronze (Phosphor Bronze)"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "response_time": 1.0869429111480713,
+      "retrieval_method": "semantic_only"
+    },
+    {
+      "query": "lightweight corrosion resistant metal",
+      "category": "semantic",
+      "success": true,
+      "passed": false,
+      "expected_materials": [
+        "Aluminum 6061-T6",
+        "Titanium Ti-6Al-4V",
+        "Magnesium AZ31B"
+      ],
+      "found_materials": [],
+      "retrieved_materials": [
+        "MatWeb - Stainless Steel 304",
+        "MatWeb - Stainless Steel 316",
+        "MatWeb - Tool Steel D2",
+        "MatWeb - Hastelloy C-276",
+        "MatWeb - Bronze (Phosphor Bronze)"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "response_time": 2.6256749629974365,
+      "retrieval_method": "semantic_only"
+    },
+    {
+      "query": "high temperature resistant materials",
+      "category": "semantic",
+      "success": true,
+      "passed": false,
+      "expected_materials": [
+        "Inconel 718",
+        "PEEK",
+        "Tungsten",
+        "Ceramic (Alumina Al2O3)"
+      ],
+      "found_materials": [
+        "Tungsten"
+      ],
+      "retrieved_materials": [
+        "MatWeb - Tungsten",
+        "MatWeb - ABS Plastic, General Purpose",
+        "MatWeb - Glass (Borosilicate)",
+        "MatWeb - Aluminum 6061-T6",
+        "MatWeb - Polycarbonate (PC)"
+      ],
+      "precision": 0.2,
+      "recall": 0.25,
+      "response_time": 2.600785970687866,
+      "retrieval_method": "semantic_only"
+    },
+    {
+      "query": "materials for aerospace applications",
+      "category": "application",
+      "success": true,
+      "passed": false,
+      "expected_materials": [
+        "Titanium Ti-6Al-4V",
+        "Aluminum 7075-T6",
+        "Carbon Fiber Composite"
+      ],
+      "found_materials": [
+        "Aluminum 7075-T6"
+      ],
+      "retrieved_materials": [
+        "MatWeb - Aluminum 7075-T6",
+        "MatWeb - Aluminum 2024-T3",
+        "MatWeb - ABS Plastic, General Purpose",
+        "MatWeb - PEEK (Polyether Ether Ketone)",
+        "MatWeb - PET (Polyethylene Terephthalate)"
+      ],
+      "precision": 0.2,
+      "recall": 0.3333333333333333,
+      "response_time": 1.183816909790039,
+      "retrieval_method": "semantic_only"
+    },
+    {
+      "query": "density 2.70 g/cc",
+      "category": "exact_match",
+      "success": true,
+      "passed": false,
+      "expected_materials": [
+        "Aluminum 6061-T6"
+      ],
+      "found_materials": [],
+      "retrieved_materials": [
+        "MatWeb - Lead",
+        "MatWeb - Hastelloy C-276",
+        "MatWeb - Carbon Fiber Composite (Epoxy)",
+        "MatWeb - Titanium Grade 2 (CP Ti)",
+        "MatWeb - Graphite"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "response_time": 0.7783288955688477,
+      "retrieval_method": "semantic_only"
+    },
+    {
+      "query": "Aluminum 6061-T6 properties",
+      "category": "exact_match",
+      "success": true,
+      "passed": true,
+      "expected_materials": [
+        "Aluminum 6061-T6"
+      ],
+      "found_materials": [
+        "Aluminum 6061-T6"
+      ],
+      "retrieved_materials": [
+        "MatWeb - Aluminum 6061-T6",
+        "MatWeb - Aluminum 7075-T6",
+        "MatWeb - Aluminum 2024-T3",
+        "MatWeb - Inconel 625",
+        "MatWeb - Nylon 6/6 (PA66)"
+      ],
+      "precision": 0.2,
+      "recall": 1.0,
+      "response_time": 1.2697432041168213,
+      "retrieval_method": "semantic_only"
+    },
+    {
+      "query": "compare stainless steel 304 and 316",
+      "category": "comparison",
+      "success": true,
+      "passed": true,
+      "expected_materials": [
+        "Stainless Steel 304",
+        "Stainless Steel 316"
+      ],
+      "found_materials": [
+        "Stainless Steel 304",
+        "Stainless Steel 316"
+      ],
+      "retrieved_materials": [
+        "MatWeb - Stainless Steel 304",
+        "MatWeb - Stainless Steel 316",
+        "MatWeb - Brass C360",
+        "MatWeb - Carbon Steel 1045",
+        "MatWeb - Stainless Steel 17-4 PH"
+      ],
+      "precision": 0.4,
+      "recall": 1.0,
+      "response_time": 3.3781280517578125,
+      "retrieval_method": "semantic_only"
+    },
+    {
+      "query": "titanium vs aluminum for aerospace",
+      "category": "comparison",
+      "success": true,
+      "passed": true,
+      "expected_materials": [
+        "Titanium Ti-6Al-4V",
+        "Aluminum 6061-T6",
+        "Aluminum 7075-T6"
+      ],
+      "found_materials": [
+        "Titanium Ti-6Al-4V",
+        "Aluminum 6061-T6",
+        "Aluminum 7075-T6"
+      ],
+      "retrieved_materials": [
+        "MatWeb - Titanium Ti-6Al-4V (Grade 5)",
+        "MatWeb - Aluminum 2024-T3",
+        "MatWeb - Titanium Grade 2 (CP Ti)",
+        "MatWeb - Aluminum 7075-T6",
+        "MatWeb - Aluminum 6061-T6"
+      ],
+      "precision": 0.6,
+      "recall": 1.0,
+      "response_time": 6.698050022125244,
+      "retrieval_method": "semantic_only"
+    },
+    {
+      "query": "most sustainable materials",
+      "category": "sustainability",
+      "success": true,
+      "passed": false,
+      "expected_materials": [
+        "Bamboo",
+        "Wood (Oak)",
+        "Natural Rubber"
+      ],
+      "found_materials": [],
+      "retrieved_materials": [
+        "MatWeb - PET (Polyethylene Terephthalate)",
+        "MatWeb - Concrete (Structural)",
+        "MatWeb - Graphite",
+        "MatWeb - Lead",
+        "MatWeb - Tungsten"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "response_time": 0.4889540672302246,
+      "retrieval_method": "semantic_only"
+    },
+    {
+      "query": "recyclable metals",
+      "category": "sustainability",
+      "success": true,
+      "passed": false,
+      "expected_materials": [
+        "Aluminum 6061-T6",
+        "Stainless Steel 304",
+        "Copper C110"
+      ],
+      "found_materials": [],
+      "retrieved_materials": [
+        "MatWeb - Hastelloy C-276",
+        "MatWeb - Beryllium Copper (C17200)",
+        "MatWeb - Tungsten",
+        "MatWeb - Bronze (Phosphor Bronze)",
+        "MatWeb - Molybdenum"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "response_time": 2.0978238582611084,
+      "retrieval_method": "semantic_only"
+    },
+    {
+      "query": "show me aluminum alloys",
+      "category": "category_search",
+      "success": true,
+      "passed": true,
+      "expected_materials": [
+        "Aluminum 6061-T6",
+        "Aluminum 7075-T6",
+        "Aluminum 2024-T3"
+      ],
+      "found_materials": [
+        "Aluminum 6061-T6",
+        "Aluminum 7075-T6",
+        "Aluminum 2024-T3"
+      ],
+      "retrieved_materials": [
+        "MatWeb - Aluminum 6061-T6",
+        "MatWeb - Aluminum 2024-T3",
+        "MatWeb - Aluminum 7075-T6",
+        "MatWeb - Zinc Alloy (Zamak 3)",
+        "MatWeb - Beryllium Copper (C17200)"
+      ],
+      "precision": 0.6,
+      "recall": 1.0,
+      "response_time": 2.622222900390625,
+      "retrieval_method": "semantic_only"
+    },
+    {
+      "query": "list ceramics",
+      "category": "category_search",
+      "success": true,
+      "passed": true,
+      "expected_materials": [
+        "Ceramic (Alumina Al2O3)",
+        "Silicon Carbide",
+        "Zirconia"
+      ],
+      "found_materials": [
+        "Ceramic (Alumina Al2O3)",
+        "Silicon Carbide",
+        "Zirconia"
+      ],
+      "retrieved_materials": [
+        "MatWeb - Ceramic (Alumina Al2O3)",
+        "MatWeb - Zirconia (ZrO2)",
+        "MatWeb - Silicon Carbide (SiC)",
+        "MatWeb - Bronze (Phosphor Bronze)",
+        "MatWeb - Stainless Steel 304"
+      ],
+      "precision": 0.6,
+      "recall": 1.0,
+      "response_time": 0.9263010025024414,
+      "retrieval_method": "semantic_only"
+    },
+    {
+      "query": "strong lightweight affordable metal",
+      "category": "multi_constraint",
+      "success": true,
+      "passed": false,
+      "expected_materials": [
+        "Aluminum 7075-T6",
+        "Carbon Steel 1045"
+      ],
+      "found_materials": [],
+      "retrieved_materials": [
+        "MatWeb - Tool Steel D2",
+        "MatWeb - Lead",
+        "MatWeb - Bronze (Phosphor Bronze)",
+        "MatWeb - Carbon Steel 4140",
+        "MatWeb - Beryllium Copper (C17200)"
+      ],
+      "precision": 0.0,
+      "recall": 0.0,
+      "response_time": 2.0161170959472656,
+      "retrieval_method": "semantic_only"
+    }
+  ]
+}
