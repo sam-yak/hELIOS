@@ -5,9 +5,8 @@
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.116.1-green.svg)](https://fastapi.tiangolo.com/)
 [![LangChain](https://img.shields.io/badge/LangChain-0.3.27-orange.svg)](https://python.langchain.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
----
+-----
 
 ## 🎯 Overview
 
@@ -23,7 +22,7 @@ Helios is a conversational AI assistant designed to help engineers select approp
 - 📁 **Data Export**: Export material data in JSON, CSV, or TXT formats
 - 🔐 **Environment-based Config**: Secure credential management with .env files
 
----
+-----
 
 ## 📋 Table of Contents
 
@@ -41,9 +40,8 @@ Helios is a conversational AI assistant designed to help engineers select approp
 - [Performance](#performance)
 - [Contributing](#contributing)
 - [Roadmap](#roadmap)
-- [License](#license)
 
----
+-----
 
 ## 🏗️ Architecture
 
@@ -120,6 +118,7 @@ Helios is a conversational AI assistant designed to help engineers select approp
 ### Technology Stack
 
 **Backend:**
+
 - **FastAPI**: High-performance web framework
 - **LangChain**: Orchestration for LLM applications
 - **OpenAI GPT-4**: Language model for answer generation
@@ -127,20 +126,23 @@ Helios is a conversational AI assistant designed to help engineers select approp
 - **BM25**: Keyword-based retrieval algorithm
 
 **Frontend:**
+
 - Vanilla JavaScript with Markdown rendering
 - Responsive design with clean UI
 
 **Observability:**
+
 - LangSmith for distributed tracing
 - Custom logging with structured logs
 - Performance metrics tracking
 
 **Data:**
+
 - 72 materials with complete properties
 - Unified JSON database
 - 27 material categories
 
----
+-----
 
 ## 📦 Installation
 
@@ -197,6 +199,7 @@ LOG_LEVEL=INFO
 ```
 
 **Getting API Keys:**
+
 - **OpenAI**: https://platform.openai.com/api-keys
 - **LangSmith**: https://smith.langchain.com/ (free tier available)
 
@@ -208,6 +211,7 @@ python ingest_v2.py
 ```
 
 Expected output:
+
 ```
 ======================================================================
 HELIOS MATERIALS DATABASE INGESTION v2.0
@@ -226,59 +230,66 @@ python run.py
 
 Server will start at: **http://127.0.0.1:8000**
 
----
+-----
 
 ## 🚀 Quick Start
 
 ### Basic Usage
 
 1. **Open your browser** to http://127.0.0.1:8000
-2. **Enter a query** in the text box, for example:
-   - "lightweight metal for aerospace"
-   - "compare titanium and aluminum"
-   - "materials with yield strength over 800 MPa"
-3. **View results** with source citations
-4. **Export data** if a specific material is detected
+1. **Enter a query** in the text box, for example:
+- “lightweight metal for aerospace”
+- “compare titanium and aluminum”
+- “materials with yield strength over 800 MPa”
+1. **View results** with source citations
+1. **Export data** if a specific material is detected
 
 ### Example Queries
 
 **Property-Based:**
+
 ```
 Find materials with density less than 3 g/cc
 ```
 
 **Application-Based:**
+
 ```
 What materials are suitable for high temperature applications?
 ```
 
 **Comparison:**
+
 ```
 Compare stainless steel 304 and 316 for marine use
 ```
 
 **Category:**
+
 ```
 Show me all aluminum alloys in the database
 ```
 
----
+-----
 
 ## 💡 Usage
 
 ### Command Line Interface
 
 #### Start the Server
+
 ```bash
 python run.py
 ```
 
 #### Run Database Ingestion
+
 ```bash
 python ingest_v2.py
 ```
 
 #### Run Evaluation Suite
+
 ```bash
 # Run hybrid retrieval tests
 python evaluation/test_suite.py
@@ -291,6 +302,7 @@ python evaluation/test_suite_realistic.py compare
 ```
 
 #### Verify Data
+
 ```bash
 # Check materials count
 python migrate_data.py
@@ -311,6 +323,7 @@ curl -X POST http://127.0.0.1:8000/query \
 ```
 
 Response:
+
 ```json
 {
   "answer": "Based on the materials in the database...",
@@ -340,6 +353,7 @@ curl http://127.0.0.1:8000/health
 ```
 
 Response:
+
 ```json
 {
   "status": "healthy",
@@ -351,7 +365,7 @@ Response:
 }
 ```
 
----
+-----
 
 ## 🗄️ Database
 
@@ -403,41 +417,46 @@ The `materials_database.json` contains 72 materials with complete data:
 - Natural Materials (3)
 - Precious Metals (3)
 - Cast Irons (2)
-- And more...
+- And more…
 
 ### Adding New Materials
 
 1. Edit `materials_database.json`
-2. Add new material following the structure above
-3. Run: `python ingest_v2.py` to rebuild the database
-4. Restart server: `python run.py`
+1. Add new material following the structure above
+1. Run: `python ingest_v2.py` to rebuild the database
+1. Restart server: `python run.py`
 
 ### Database Maintenance
 
 **Rebuild from scratch:**
+
 ```bash
 rm -rf db/
 python ingest_v2.py
 ```
 
 **Verify integrity:**
+
 ```bash
 python migrate_data.py
 ```
 
----
+-----
 
 ## 📖 API Documentation
 
 ### Endpoints
 
 #### `GET /`
+
 Serves the frontend HTML interface.
 
 #### `POST /query`
+
 Main query endpoint for material searches.
 
 **Request Body:**
+
 ```json
 {
   "question": "string",
@@ -450,6 +469,7 @@ Main query endpoint for material searches.
 ```
 
 **Response:**
+
 ```json
 {
   "answer": "string",
@@ -462,9 +482,11 @@ Main query endpoint for material searches.
 ```
 
 #### `POST /compare`
+
 Compare different retrieval methods.
 
 **Request:**
+
 ```json
 {
   "query": "string",
@@ -473,6 +495,7 @@ Compare different retrieval methods.
 ```
 
 **Response:**
+
 ```json
 {
   "query": "string",
@@ -490,9 +513,11 @@ Compare different retrieval methods.
 ```
 
 #### `POST /export`
+
 Export material data.
 
 **Request:**
+
 ```json
 {
   "material_name": "string",
@@ -503,12 +528,14 @@ Export material data.
 **Response:** File download
 
 #### `GET /health`
+
 Health check endpoint.
 
 #### `GET /stats`
+
 Database statistics.
 
----
+-----
 
 ## 🧪 Evaluation
 
@@ -530,11 +557,11 @@ python evaluation/test_suite_realistic.py compare
 ### Test Categories
 
 1. **Exact Match**: Material name queries
-2. **Comparison**: Compare two materials
-3. **Category Search**: Find materials by category
-4. **Application**: Materials for specific uses
-5. **Semantic Property**: Fuzzy property descriptions
-6. **Material Type**: General material classes
+1. **Comparison**: Compare two materials
+1. **Category Search**: Find materials by category
+1. **Application**: Materials for specific uses
+1. **Semantic Property**: Fuzzy property descriptions
+1. **Material Type**: General material classes
 
 ### Metrics
 
@@ -565,7 +592,7 @@ Results by Category:
   material_type      : 1/3 (33%)
 ```
 
----
+-----
 
 ## 🛠️ Development
 
@@ -620,10 +647,10 @@ hELIOS/
 **Main Components:**
 
 1. **main.py**: FastAPI application with endpoints
-2. **hybrid_retriever.py**: Ensemble retrieval (semantic + BM25)
-3. **document_loader.py**: Loads documents for BM25 indexing
-4. **logger.py**: Structured logging with metrics
-5. **test_suite.py**: Automated evaluation framework
+1. **hybrid_retriever.py**: Ensemble retrieval (semantic + BM25)
+1. **document_loader.py**: Loads documents for BM25 indexing
+1. **logger.py**: Structured logging with metrics
+1. **test_suite.py**: Automated evaluation framework
 
 ### Development Workflow
 
@@ -646,35 +673,33 @@ tail -f logs/helios.log
 ### Adding New Features
 
 1. **New Retrieval Method:**
-   - Add to `retrieval/` directory
-   - Integrate in `main.py`
-   - Update evaluation tests
+- Add to `retrieval/` directory
+- Integrate in `main.py`
+- Update evaluation tests
+1. **New Material Properties:**
+- Update `materials_database.json` structure
+- Modify `document_loader.py` to extract new properties
+- Update metadata in `ingest_v2.py`
+- Rebuild database
+1. **New API Endpoint:**
+- Add route in `main.py`
+- Add logging
+- Update API documentation
 
-2. **New Material Properties:**
-   - Update `materials_database.json` structure
-   - Modify `document_loader.py` to extract new properties
-   - Update metadata in `ingest_v2.py`
-   - Rebuild database
-
-3. **New API Endpoint:**
-   - Add route in `main.py`
-   - Add logging
-   - Update API documentation
-
----
+-----
 
 ## ⚙️ Configuration
 
 ### Environment Variables
 
-| Variable | Required | Default | Description |
-|----------|----------|---------|-------------|
-| `OPENAI_API_KEY` | Yes | - | OpenAI API key |
-| `LANGCHAIN_TRACING_V2` | No | `false` | Enable LangSmith tracing |
-| `LANGCHAIN_API_KEY` | No | - | LangSmith API key |
-| `LANGCHAIN_PROJECT` | No | `helios-prod` | LangSmith project name |
-| `HELIOS_ENV` | No | `development` | Environment name |
-| `LOG_LEVEL` | No | `INFO` | Logging level |
+|Variable              |Required|Default      |Description             |
+|----------------------|--------|-------------|------------------------|
+|`OPENAI_API_KEY`      |Yes     |-            |OpenAI API key          |
+|`LANGCHAIN_TRACING_V2`|No      |`false`      |Enable LangSmith tracing|
+|`LANGCHAIN_API_KEY`   |No      |-            |LangSmith API key       |
+|`LANGCHAIN_PROJECT`   |No      |`helios-prod`|LangSmith project name  |
+|`HELIOS_ENV`          |No      |`development`|Environment name        |
+|`LOG_LEVEL`           |No      |`INFO`       |Logging level           |
 
 ### Retrieval Configuration
 
@@ -699,14 +724,16 @@ def setup_logger(name, log_file, level=logging.INFO):
     # Customize log format, handlers, etc.
 ```
 
----
+-----
 
 ## 🔧 Troubleshooting
 
 ### Common Issues
 
-#### 1. "OPENAI_API_KEY not found"
+#### 1. “OPENAI_API_KEY not found”
+
 **Solution:**
+
 ```bash
 # Check .env file exists
 cat .env
@@ -719,15 +746,19 @@ export OPENAI_API_KEY='sk-proj-...'
 python run.py
 ```
 
-#### 2. "Database not found" or "db/ directory missing"
+#### 2. “Database not found” or “db/ directory missing”
+
 **Solution:**
+
 ```bash
 # Rebuild database
 python ingest_v2.py
 ```
 
-#### 3. "Module not found" errors
+#### 3. “Module not found” errors
+
 **Solution:**
+
 ```bash
 # Reinstall dependencies
 pip install -r requirements.txt
@@ -737,18 +768,23 @@ pip install rank-bm25
 ```
 
 #### 4. Slow response times
+
 **Possible causes:**
+
 - OpenAI API rate limits
 - Large number of materials
 - Network latency
 
 **Solutions:**
+
 - Check OpenAI API status
 - Reduce `k` parameter in retrieval
 - Use caching (future feature)
 
 #### 5. Import errors with ChromaDB
+
 **Solution:**
+
 ```bash
 # ChromaDB might have deprecation warnings
 # Install updated version (optional)
@@ -770,6 +806,7 @@ python run.py
 ```
 
 Check logs:
+
 ```bash
 tail -f logs/helios.log
 ```
@@ -777,6 +814,7 @@ tail -f logs/helios.log
 ### Performance Issues
 
 Monitor metrics:
+
 ```bash
 # View performance data
 cat logs/metrics.log
@@ -785,24 +823,27 @@ cat logs/metrics.log
 grep "Response Time" logs/helios.log
 ```
 
----
+-----
 
 ## 📈 Performance
 
 ### Benchmarks
 
 **System Specifications:**
+
 - MacBook Air M1
 - 8GB RAM
 - Python 3.13
 
 **Performance Metrics:**
+
 - Average Response Time: 2.3 seconds
 - P50 Response Time: 2.1 seconds
 - P95 Response Time: 3.5 seconds
 - P99 Response Time: 7.2 seconds
 
 **Throughput:**
+
 - ~25 queries per minute (sequential)
 - Database size: 17MB (72 materials)
 - Memory usage: ~500MB
@@ -810,45 +851,48 @@ grep "Response Time" logs/helios.log
 ### Optimization Tips
 
 1. **Reduce retrieval size:**
+   
    ```python
    # In main.py, reduce k value
    retrieved_docs = hybrid_retriever.retrieve(query, k=3)  # Default: 5
    ```
-
-2. **Cache embeddings** (future feature)
-
-3. **Use lighter LLM:**
+1. **Cache embeddings** (future feature)
+1. **Use lighter LLM:**
+   
    ```python
    llm = ChatOpenAI(model_name="gpt-3.5-turbo")  # Faster, cheaper
    ```
+1. **Batch processing** for multiple queries
 
-4. **Batch processing** for multiple queries
-
----
+-----
 
 ## 🤝 Contributing
 
-Contributions are welcome! Here's how:
+Contributions are welcome! Here’s how:
 
 1. **Fork the repository**
-2. **Create a feature branch:**
+1. **Create a feature branch:**
+   
    ```bash
    git checkout -b feature/amazing-feature
    ```
-3. **Make your changes**
-4. **Run tests:**
+1. **Make your changes**
+1. **Run tests:**
+   
    ```bash
    python evaluation/test_suite_realistic.py
    ```
-5. **Commit your changes:**
+1. **Commit your changes:**
+   
    ```bash
    git commit -m "Add amazing feature"
    ```
-6. **Push to branch:**
+1. **Push to branch:**
+   
    ```bash
    git push origin feature/amazing-feature
    ```
-7. **Open a Pull Request**
+1. **Open a Pull Request**
 
 ### Development Guidelines
 
@@ -858,23 +902,26 @@ Contributions are welcome! Here's how:
 - Update README with new functionality
 - Add logging for debugging
 
----
+-----
 
 ## 🗺️ Roadmap
 
 ### Week 3 (Planned)
+
 - [ ] Multi-step agentic workflows
 - [ ] Tool-based reasoning
 - [ ] Multi-constraint optimization (Pareto analysis)
 - [ ] Material compatibility graph
 
 ### Week 4 (Planned)
+
 - [ ] Fine-tuned embeddings for materials domain
 - [ ] Advanced filtering with self-query improvements
 - [ ] Cost estimation tools
 - [ ] Supplier integration
 
 ### Future Enhancements
+
 - [ ] Expand to 500+ materials
 - [ ] Real-time supplier data integration
 - [ ] Material comparison visualizations
@@ -885,13 +932,7 @@ Contributions are welcome! Here's how:
 - [ ] Collaborative material selection
 - [ ] Material lifecycle analysis
 
----
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
+-----
 
 ## 🙏 Acknowledgments
 
@@ -902,18 +943,19 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **HuggingFace** for embedding models
 - **MatWeb** for materials data inspiration
 
----
+-----
 
 ## 📧 Contact
 
 **Project Maintainer:** [Your Name]
+
 - Email: your.email@example.com
 - GitHub: [@yourusername](https://github.com/yourusername)
 - LinkedIn: [Your Profile](https://linkedin.com/in/yourprofile)
 
 **Project Link:** https://github.com/yourusername/helios
 
----
+-----
 
 ## 📊 Project Stats
 
@@ -926,44 +968,52 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Test Coverage:** 20+ test cases
 - **Lines of Code:** ~2,500+
 
----
+-----
 
 ## 🎓 For Acqui-hire / Job Applications
 
 This project demonstrates:
 
 ✅ **Production RAG Implementation**
+
 - Hybrid retrieval combining semantic + keyword search
 - Proper prompt engineering and chain orchestration
 - Context-aware conversational interface
 
 ✅ **Data Engineering**
+
 - Designed unified data schema
 - ETL pipeline for materials ingestion
 - Metadata extraction and normalization
 
 ✅ **Full-Stack Development**
+
 - FastAPI backend with proper error handling
 - Interactive frontend with real-time updates
 - RESTful API design
 
 ✅ **MLOps Best Practices**
+
 - Structured logging and monitoring
 - Performance metrics tracking
 - Automated evaluation framework
 - Distributed tracing with LangSmith
 
 ✅ **Software Engineering**
+
 - Clean code architecture
 - Comprehensive documentation
 - Environment-based configuration
 - Modular, testable design
 
 ✅ **Problem Solving**
+
 - Identified and documented system limitations
 - Iterative improvement approach
 - Honest assessment of trade-offs
 
----
+-----
 
 **Built with ❤️ for engineers, by engineers.**
+
+Last Updated: 2025-01-15
