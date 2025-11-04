@@ -54,7 +54,7 @@ Helios is a conversational AI assistant designed to help engineers select approp
          │
          ▼
 ┌─────────────────────────────────────────┐
-│           Frontend (HTML/JS)             │
+│           Frontend (HTML/JS)            │
 │  - Query input & chat history           │
 │  - Results display with sources         │
 │  - Export functionality                 │
@@ -71,11 +71,11 @@ Helios is a conversational AI assistant designed to help engineers select approp
          ▼
 ┌─────────────────────────────────────────┐
 │       Hybrid Retrieval System           │
-│  ┌────────────────┬─────────────────┐  │
-│  │ Semantic       │ Keyword (BM25)  │  │
-│  │ (ChromaDB)     │                 │  │
-│  │ 60% weight     │ 40% weight      │  │
-│  └────────┬───────┴────────┬────────┘  │
+│  ┌────────────────┬─────────────────┐   │
+│  │ Semantic       │ Keyword (BM25)  │   │
+│  │ (ChromaDB)     │                 │   │
+│  │ 60% weight     │ 40% weight      │   │
+│  └────────┬───────┴────────┬────────┘   │
 │           │                 │           │
 │           └────────┬────────┘           │
 │                    │                    │
@@ -85,7 +85,7 @@ Helios is a conversational AI assistant designed to help engineers select approp
          ▼
 ┌─────────────────────────────────────────┐
 │         Materials Database              │
-│  - 72 materials across 27 categories   │
+│  - 72 materials across 27 categories    │
 │  - Physical, mechanical, thermal props  │
 │  - Cost, sustainability, applications   │
 └────────┬────────────────────────────────┘
