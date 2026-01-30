@@ -970,9 +970,8 @@ Contributions are welcome! Here’s how:
 
 -----
 
-## 🎓 For Acqui-hire / Job Applications
+## 🎓 This project demonstrates:
 
-This project demonstrates:
 
 ✅ **Production RAG Implementation**
 
