@@ -1,0 +1,42 @@
+# Virtual environment
+venv/
+ENV/
+.Python
+
+# Environment secrets
+.env
+.env.*
+
+# Local database (rebuilt in Docker)
+db/
+
+# IDE & OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs (fresh in container)
+logs/
+
+# Git
+.git/
+.gitignore
+
+# Old/backup files
+*.old
+
+# Evaluation results (not needed in prod)
+evaluation/results_*.json
+
+# Docs
+docs/
+*.md
+!requirements.txt
