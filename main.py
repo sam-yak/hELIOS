@@ -14,7 +14,7 @@ from langchain.chains import create_history_aware_retriever, create_retrieval_ch
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_community.vectorstores import Chroma
 from langchain_huggingface import HuggingFaceEmbeddings
-from langchain_openai import ChatOpenAI
+from langchain_anthropic import ChatAnthropic
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 
 # Load environment variables
@@ -41,11 +41,11 @@ class CompareRequest(BaseModel): query: str; k: int = 5
 logger.info("🚀 Starting Helios V2 (Hybrid Retrieval) initialization...")
 logger.info(f"Environment: {os.getenv('HELIOS_ENV', 'development')}")
 
-if "OPENAI_API_KEY" not in os.environ:
-    logger.critical("❌ OPENAI_API_KEY not found in environment!")
-    raise ValueError("FATAL ERROR: OPENAI_API_KEY environment variable not set.")
+if "ANTHROPIC_API_KEY" not in os.environ:
+    logger.critical("❌ ANTHROPIC_API_KEY not found in environment!")
+    raise ValueError("FATAL ERROR: ANTHROPIC_API_KEY environment variable not set.")
 
-logger.info("✅ OpenAI API key loaded from environment")
+logger.info("✅ Anthropic API key loaded from environment")
 
 if os.getenv("LANGCHAIN_TRACING_V2") == "true":
     logger.info("✅ LangSmith tracing enabled")
@@ -70,9 +70,9 @@ try:
     vector_store = Chroma(persist_directory="db", embedding_function=embeddings)
     logger.info("✅ Vector store loaded")
     
-    logger.info("Initializing LLM...")
-    llm = ChatOpenAI(temperature=0.0, model_name="gpt-4o")
-    logger.info("✅ LLM initialized")
+    logger.info("Initializing LLM (Claude)...")
+    llm = ChatAnthropic(temperature=0.0, model_name="claude-sonnet-4-20250514")
+    logger.info("✅ LLM initialized (Claude Sonnet)")
     
 except Exception as e:
     logger.error(f"❌ Failed to initialize AI components: {e}")
@@ -286,8 +286,8 @@ def export_data(request: ExportRequest):
 def health_check():
     return {
         "status": "healthy",
-        "version": "2.1.0",
-        "features": ["hybrid_retrieval", "langsmith_tracing"],
+        "version": "2.2.0",
+        "features": ["hybrid_retrieval", "claude_llm", "langsmith_tracing"],
         "materials_count": len(materials_database),
         "environment": os.getenv("HELIOS_ENV", "development"),
         "langsmith_enabled": os.getenv("LANGCHAIN_TRACING_V2") == "true",
