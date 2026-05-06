@@ -1,3 +1,13 @@
+---
+title: Helios Engineering Assistant
+emoji: ☀️
+colorFrom: orange
+colorTo: yellow
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 # Helios ☀️ Engineering Assistant
 
 > An AI-powered materials selection assistant using advanced RAG (Retrieval-Augmented Generation) with hybrid retrieval, comprehensive materials database, and production-grade observability.
